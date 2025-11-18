@@ -16,7 +16,6 @@
 		484693562ECC09B100A63998 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846934C2ECC09B100A63998 /* SceneDelegate.swift */; };
 		484693572ECC09B100A63998 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846934D2ECC09B100A63998 /* ViewController.swift */; };
 		4846935A2ECC0D5F00A63998 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693592ECC0D5F00A63998 /* HomeView.swift */; };
-		4846935C2ECC0D7C00A63998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846935B2ECC0D7C00A63998 /* HomeViewController.swift */; };
 		4846935F2ECC0DA200A63998 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846935E2ECC0DA200A63998 /* LoginViewController.swift */; };
 		484693612ECC0DB900A63998 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693602ECC0DB900A63998 /* LoginView.swift */; };
 		484693632ECC0DDC00A63998 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693622ECC0DDC00A63998 /* SignUpView.swift */; };
@@ -71,7 +70,6 @@
 		4846934C2ECC09B100A63998 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4846934D2ECC09B100A63998 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		484693592ECC0D5F00A63998 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		4846935B2ECC0D7C00A63998 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4846935E2ECC0DA200A63998 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		484693602ECC0DB900A63998 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		484693622ECC0DDC00A63998 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
@@ -172,7 +170,6 @@
 				484693492ECC09B100A63998 /* LaunchScreen.storyboard */,
 				4846934B2ECC09B100A63998 /* Main.storyboard */,
 				4846934C2ECC09B100A63998 /* SceneDelegate.swift */,
-				4846934D2ECC09B100A63998 /* ViewController.swift */,
 				484693662ECC0E0B00A63998 /* SignUp Screen */,
 				484693702ECC0EAA00A63998 /* Chat Screen */,
 				484693892ECC115E00A63998 /* Config.swift */,
@@ -184,7 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				484693592ECC0D5F00A63998 /* HomeView.swift */,
-				4846935B2ECC0D7C00A63998 /* HomeViewController.swift */,
+				4846934D2ECC09B100A63998 /* ViewController.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -438,7 +435,6 @@
 				484693832ECC0FE500A63998 /* ChatService.swift in Sources */,
 				484693562ECC09B100A63998 /* SceneDelegate.swift in Sources */,
 				4846938A2ECC115E00A63998 /* Config.swift in Sources */,
-				4846935C2ECC0D7C00A63998 /* HomeViewController.swift in Sources */,
 				484693782ECC0F1E00A63998 /* User.swift in Sources */,
 				484693752ECC0EF500A63998 /* ResourcesView.swift in Sources */,
 				484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */,
