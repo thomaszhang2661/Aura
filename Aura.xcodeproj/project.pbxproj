@@ -6,6 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484693442ECC09B100A63998 /* Assets.xcassets */; };
+		484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484693492ECC09B100A63998 /* LaunchScreen.storyboard */; };
+		484693522ECC09B100A63998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846934B2ECC09B100A63998 /* Main.storyboard */; };
+		484693532ECC09B100A63998 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693432ECC09B100A63998 /* AppDelegate.swift */; };
+		484693542ECC09B100A63998 /* AuraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693452ECC09B100A63998 /* AuraApp.swift */; };
+		484693552ECC09B100A63998 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693462ECC09B100A63998 /* ContentView.swift */; };
+		484693562ECC09B100A63998 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846934C2ECC09B100A63998 /* SceneDelegate.swift */; };
+		484693572ECC09B100A63998 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846934D2ECC09B100A63998 /* ViewController.swift */; };
+		4846935A2ECC0D5F00A63998 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693592ECC0D5F00A63998 /* HomeView.swift */; };
+		4846935C2ECC0D7C00A63998 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846935B2ECC0D7C00A63998 /* HomeViewController.swift */; };
+		4846935F2ECC0DA200A63998 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846935E2ECC0DA200A63998 /* LoginViewController.swift */; };
+		484693612ECC0DB900A63998 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693602ECC0DB900A63998 /* LoginView.swift */; };
+		484693632ECC0DDC00A63998 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693622ECC0DDC00A63998 /* SignUpView.swift */; };
+		484693652ECC0DF300A63998 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693642ECC0DF300A63998 /* SignUpViewController.swift */; };
+		484693692ECC0E4E00A63998 /* MoodLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693682ECC0E4E00A63998 /* MoodLogViewController.swift */; };
+		4846936B2ECC0E6500A63998 /* MoodLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846936A2ECC0E6500A63998 /* MoodLogView.swift */; };
+		4846936D2ECC0E8D00A63998 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846936C2ECC0E8D00A63998 /* ChatView.swift */; };
+		4846936F2ECC0EA200A63998 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846936E2ECC0EA200A63998 /* ChatViewController.swift */; };
+		484693732ECC0EE300A63998 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693722ECC0EE300A63998 /* ResourcesViewController.swift */; };
+		484693752ECC0EF500A63998 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693742ECC0EF500A63998 /* ResourcesView.swift */; };
+		484693782ECC0F1E00A63998 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693772ECC0F1E00A63998 /* User.swift */; };
+		4846937A2ECC0F3300A63998 /* MoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693792ECC0F3300A63998 /* MoodEntry.swift */; };
+		4846937C2ECC0F4B00A63998 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846937B2ECC0F4B00A63998 /* ChatMessage.swift */; };
+		4846937F2ECC0F8400A63998 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846937E2ECC0F8400A63998 /* AuthService.swift */; };
+		484693812ECC0FCF00A63998 /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693802ECC0FCF00A63998 /* FirestoreService.swift */; };
+		484693832ECC0FE500A63998 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693822ECC0FE500A63998 /* ChatService.swift */; };
+		484693862ECC10F200A63998 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693852ECC10F200A63998 /* LoadingIndicator.swift */; };
+		484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693872ECC110900A63998 /* IntegrationContracts.swift */; };
+		4846938A2ECC115E00A63998 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693892ECC115E00A63998 /* Config.swift */; };
+		4846938D2ECC119300A63998 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938C2ECC118E00A63998 /* README.md */; };
+		4846938F2ECC11AB00A63998 /* TEAM_ROLES.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938E2ECC11A700A63998 /* TEAM_ROLES.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		026A92CF2ECBFCC90017D43B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,27 +61,41 @@
 		026A92B82ECBFCC40017D43B /* Aura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026A92CE2ECBFCC90017D43B /* AuraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		026A92D82ECBFCC90017D43B /* AuraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		484693432ECC09B100A63998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		484693442ECC09B100A63998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		484693452ECC09B100A63998 /* AuraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuraApp.swift; sourceTree = "<group>"; };
+		484693462ECC09B100A63998 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		484693472ECC09B100A63998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		484693482ECC09B100A63998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4846934A2ECC09B100A63998 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4846934C2ECC09B100A63998 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4846934D2ECC09B100A63998 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		484693592ECC0D5F00A63998 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4846935B2ECC0D7C00A63998 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4846935E2ECC0DA200A63998 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		484693602ECC0DB900A63998 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		484693622ECC0DDC00A63998 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		484693642ECC0DF300A63998 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		484693682ECC0E4E00A63998 /* MoodLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLogViewController.swift; sourceTree = "<group>"; };
+		4846936A2ECC0E6500A63998 /* MoodLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodLogView.swift; sourceTree = "<group>"; };
+		4846936C2ECC0E8D00A63998 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4846936E2ECC0EA200A63998 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		484693722ECC0EE300A63998 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		484693742ECC0EF500A63998 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
+		484693772ECC0F1E00A63998 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		484693792ECC0F3300A63998 /* MoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodEntry.swift; sourceTree = "<group>"; };
+		4846937B2ECC0F4B00A63998 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		4846937E2ECC0F8400A63998 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		484693802ECC0FCF00A63998 /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		484693822ECC0FE500A63998 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		484693852ECC10F200A63998 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		484693872ECC110900A63998 /* IntegrationContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationContracts.swift; sourceTree = "<group>"; };
+		484693892ECC115E00A63998 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		4846938C2ECC118E00A63998 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4846938E2ECC11A700A63998 /* TEAM_ROLES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TEAM_ROLES.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		026A92E02ECBFCC90017D43B /* Exceptions for "Aura" folder in "Aura" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 026A92B72ECBFCC40017D43B /* Aura */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		026A92BA2ECBFCC40017D43B /* Aura */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				026A92E02ECBFCC90017D43B /* Exceptions for "Aura" folder in "Aura" target */,
-			);
-			path = Aura;
-			sourceTree = "<group>";
-		};
 		026A92D12ECBFCC90017D43B /* AuraTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AuraTests;
@@ -88,7 +136,7 @@
 		026A92AF2ECBFCC40017D43B = {
 			isa = PBXGroup;
 			children = (
-				026A92BA2ECBFCC40017D43B /* Aura */,
+				4846934E2ECC09B100A63998 /* Aura */,
 				026A92D12ECBFCC90017D43B /* AuraTests */,
 				026A92DB2ECBFCC90017D43B /* AuraUITests */,
 				026A92B92ECBFCC40017D43B /* Products */,
@@ -105,6 +153,125 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		4846934E2ECC09B100A63998 /* Aura */ = {
+			isa = PBXGroup;
+			children = (
+				4846938B2ECC117D00A63998 /* Docs */,
+				484693842ECC10DA00A63998 /* Shared */,
+				4846937D2ECC0F6500A63998 /* Services */,
+				484693762ECC0F0700A63998 /* Data Models */,
+				484693712ECC0EBD00A63998 /* Resources Screen */,
+				484693672ECC0E3100A63998 /* MoodLog Screen */,
+				4846935D2ECC0D8400A63998 /* Login Screen */,
+				484693582ECC0D2400A63998 /* Home Screen */,
+				484693432ECC09B100A63998 /* AppDelegate.swift */,
+				484693442ECC09B100A63998 /* Assets.xcassets */,
+				484693452ECC09B100A63998 /* AuraApp.swift */,
+				484693462ECC09B100A63998 /* ContentView.swift */,
+				484693472ECC09B100A63998 /* Info.plist */,
+				484693492ECC09B100A63998 /* LaunchScreen.storyboard */,
+				4846934B2ECC09B100A63998 /* Main.storyboard */,
+				4846934C2ECC09B100A63998 /* SceneDelegate.swift */,
+				4846934D2ECC09B100A63998 /* ViewController.swift */,
+				484693662ECC0E0B00A63998 /* SignUp Screen */,
+				484693702ECC0EAA00A63998 /* Chat Screen */,
+				484693892ECC115E00A63998 /* Config.swift */,
+			);
+			path = Aura;
+			sourceTree = "<group>";
+		};
+		484693582ECC0D2400A63998 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				484693592ECC0D5F00A63998 /* HomeView.swift */,
+				4846935B2ECC0D7C00A63998 /* HomeViewController.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		4846935D2ECC0D8400A63998 /* Login Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4846935E2ECC0DA200A63998 /* LoginViewController.swift */,
+				484693602ECC0DB900A63998 /* LoginView.swift */,
+			);
+			path = "Login Screen";
+			sourceTree = "<group>";
+		};
+		484693662ECC0E0B00A63998 /* SignUp Screen */ = {
+			isa = PBXGroup;
+			children = (
+				484693622ECC0DDC00A63998 /* SignUpView.swift */,
+				484693642ECC0DF300A63998 /* SignUpViewController.swift */,
+			);
+			path = "SignUp Screen";
+			sourceTree = "<group>";
+		};
+		484693672ECC0E3100A63998 /* MoodLog Screen */ = {
+			isa = PBXGroup;
+			children = (
+				484693682ECC0E4E00A63998 /* MoodLogViewController.swift */,
+				4846936A2ECC0E6500A63998 /* MoodLogView.swift */,
+			);
+			path = "MoodLog Screen";
+			sourceTree = "<group>";
+		};
+		484693702ECC0EAA00A63998 /* Chat Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4846936C2ECC0E8D00A63998 /* ChatView.swift */,
+				4846936E2ECC0EA200A63998 /* ChatViewController.swift */,
+			);
+			path = "Chat Screen";
+			sourceTree = "<group>";
+		};
+		484693712ECC0EBD00A63998 /* Resources Screen */ = {
+			isa = PBXGroup;
+			children = (
+				484693722ECC0EE300A63998 /* ResourcesViewController.swift */,
+				484693742ECC0EF500A63998 /* ResourcesView.swift */,
+			);
+			path = "Resources Screen";
+			sourceTree = "<group>";
+		};
+		484693762ECC0F0700A63998 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				484693772ECC0F1E00A63998 /* User.swift */,
+				484693792ECC0F3300A63998 /* MoodEntry.swift */,
+				4846937B2ECC0F4B00A63998 /* ChatMessage.swift */,
+			);
+			path = "Data Models";
+			sourceTree = "<group>";
+		};
+		4846937D2ECC0F6500A63998 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4846937E2ECC0F8400A63998 /* AuthService.swift */,
+				484693802ECC0FCF00A63998 /* FirestoreService.swift */,
+				484693822ECC0FE500A63998 /* ChatService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		484693842ECC10DA00A63998 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				484693852ECC10F200A63998 /* LoadingIndicator.swift */,
+				484693872ECC110900A63998 /* IntegrationContracts.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		4846938B2ECC117D00A63998 /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				4846938E2ECC11A700A63998 /* TEAM_ROLES.md */,
+				4846938C2ECC118E00A63998 /* README.md */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +286,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				026A92BA2ECBFCC40017D43B /* Aura */,
 			);
 			name = Aura;
 			packageProductDependencies = (
@@ -225,6 +389,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */,
+				484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */,
+				4846938F2ECC11AB00A63998 /* TEAM_ROLES.md in Resources */,
+				4846938D2ECC119300A63998 /* README.md in Resources */,
+				484693522ECC09B100A63998 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +418,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				484693652ECC0DF300A63998 /* SignUpViewController.swift in Sources */,
+				484693532ECC09B100A63998 /* AppDelegate.swift in Sources */,
+				484693732ECC0EE300A63998 /* ResourcesViewController.swift in Sources */,
+				484693812ECC0FCF00A63998 /* FirestoreService.swift in Sources */,
+				4846937A2ECC0F3300A63998 /* MoodEntry.swift in Sources */,
+				484693542ECC09B100A63998 /* AuraApp.swift in Sources */,
+				484693552ECC09B100A63998 /* ContentView.swift in Sources */,
+				4846937F2ECC0F8400A63998 /* AuthService.swift in Sources */,
+				4846936D2ECC0E8D00A63998 /* ChatView.swift in Sources */,
+				484693612ECC0DB900A63998 /* LoginView.swift in Sources */,
+				4846936B2ECC0E6500A63998 /* MoodLogView.swift in Sources */,
+				4846935A2ECC0D5F00A63998 /* HomeView.swift in Sources */,
+				484693862ECC10F200A63998 /* LoadingIndicator.swift in Sources */,
+				484693692ECC0E4E00A63998 /* MoodLogViewController.swift in Sources */,
+				4846935F2ECC0DA200A63998 /* LoginViewController.swift in Sources */,
+				484693632ECC0DDC00A63998 /* SignUpView.swift in Sources */,
+				4846937C2ECC0F4B00A63998 /* ChatMessage.swift in Sources */,
+				484693832ECC0FE500A63998 /* ChatService.swift in Sources */,
+				484693562ECC09B100A63998 /* SceneDelegate.swift in Sources */,
+				4846938A2ECC115E00A63998 /* Config.swift in Sources */,
+				4846935C2ECC0D7C00A63998 /* HomeViewController.swift in Sources */,
+				484693782ECC0F1E00A63998 /* User.swift in Sources */,
+				484693752ECC0EF500A63998 /* ResourcesView.swift in Sources */,
+				484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */,
+				4846936F2ECC0EA200A63998 /* ChatViewController.swift in Sources */,
+				484693572ECC09B100A63998 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +475,25 @@
 			targetProxy = 026A92D92ECBFCC90017D43B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		484693492ECC09B100A63998 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				484693482ECC09B100A63998 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4846934B2ECC09B100A63998 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4846934A2ECC09B100A63998 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		026A92E22ECBFCC90017D43B /* Debug */ = {
