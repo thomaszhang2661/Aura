@@ -29,22 +29,9 @@
 		026A92D82ECBFCC90017D43B /* AuraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		026A92E02ECBFCC90017D43B /* Exceptions for "Aura" folder in "Aura" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 026A92B72ECBFCC40017D43B /* Aura */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		026A92BA2ECBFCC40017D43B /* Aura */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				026A92E02ECBFCC90017D43B /* Exceptions for "Aura" folder in "Aura" target */,
-			);
 			path = Aura;
 			sourceTree = "<group>";
 		};
