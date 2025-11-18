@@ -1,29 +1,30 @@
-//
-//  LoginViewController.swift
-//  Aura
-//
-//  Created by Chance Q on 11/17/25.
-//
-
 import UIKit
 
-class LoginViewController: UIViewController {
+final class LoginViewController: UIViewController {
+
+    private let loginView = LoginView()
+
+    override func loadView() {
+        view = loginView      // ← THIS is what “use LoginView as root view” means
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // login button
+        loginView.loginButton.addTarget(self, action: #selector(loginTapped), for: .touchUpInside)
+
+        // bottom label ("Log in") tap
+        let tap = UITapGestureRecognizer(target: self, action: #selector(bottomTapped))
+        loginView.bottomLabel.addGestureRecognizer(tap)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc private func loginTapped() {
+        print("Login tapped:", loginView.emailField.text ?? "")
     }
-    */
 
+    @objc private func bottomTapped() {
+        let vc = SignUpViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
