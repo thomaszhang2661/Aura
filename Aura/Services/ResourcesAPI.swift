@@ -10,6 +10,27 @@
 import Foundation
 import CoreLocation
 
+// MARK: - Data Models
+struct MentalHealthResource {
+    let name: String
+    let type: String
+    let phone: String
+    let description: String
+    var distance: String?
+    let latitude: Double?
+    let longitude: Double?
+    
+    init(name: String, type: String, phone: String, description: String, distance: String? = nil, latitude: Double? = nil, longitude: Double? = nil) {
+        self.name = name
+        self.type = type
+        self.phone = phone
+        self.description = description
+        self.distance = distance
+        self.latitude = latitude
+        self.longitude = longitude
+    }
+}
+
 // MARK: - Response Models
 struct ResourcesResponse: Codable {
     let resources: [APIResource]
@@ -178,28 +199,5 @@ class ResourcesAPI {
                 longitude: -71.1097
             )
         ]
-    }
-}
-
-// MARK: - Enhanced MentalHealthResource with coordinates
-extension MentalHealthResource {
-    init(name: String, type: String, phone: String, description: String, distance: String?, latitude: Double? = nil, longitude: Double? = nil) {
-        self.name = name
-        self.type = type
-        self.phone = phone
-        self.description = description
-        self.distance = distance
-        self.latitude = latitude
-        self.longitude = longitude
-    }
-    
-    var latitude: Double? {
-        // Add this property to MentalHealthResource struct
-        return nil
-    }
-    
-    var longitude: Double? {
-        // Add this property to MentalHealthResource struct
-        return nil
     }
 }

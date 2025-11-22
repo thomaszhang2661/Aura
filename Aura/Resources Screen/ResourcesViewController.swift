@@ -89,26 +89,7 @@ final class LocationService: NSObject, CLLocationManagerDelegate {
     }
 }
 
-// MARK: - Resource Model
-struct MentalHealthResource {
-    let name: String
-    let type: String
-    let phone: String
-    let description: String
-    var distance: String?
-    let latitude: Double?
-    let longitude: Double?
-    
-    init(name: String, type: String, phone: String, description: String, distance: String? = nil, latitude: Double? = nil, longitude: Double? = nil) {
-        self.name = name
-        self.type = type
-        self.phone = phone
-        self.description = description
-        self.distance = distance
-        self.latitude = latitude
-        self.longitude = longitude
-    }
-}
+// MARK: - Resource Model (defined in ResourcesAPI.swift)
 
 class ResourcesViewController: UIViewController {
 

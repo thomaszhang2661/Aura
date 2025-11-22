@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3E2805727019D2BD579321 /* ResourceAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E77AE43BCE1A46BDC593343 /* ResourceAnnotation.swift */; };
+		45ABBAEE35DB263E20F6BD19 /* APIConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CDE1E071911EA495DFF8B /* APIConfigs.swift */; };
+		4725AABA0B34E5F17308C212 /* ResourcesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE2C8A3FAC0E7982762767D2 /* ResourcesService.swift */; };
 		4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484693442ECC09B100A63998 /* Assets.xcassets */; };
 		484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484693492ECC09B100A63998 /* LaunchScreen.storyboard */; };
 		484693522ECC09B100A63998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846934B2ECC09B100A63998 /* Main.storyboard */; };
@@ -37,6 +40,10 @@
 		4846938A2ECC115E00A63998 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693892ECC115E00A63998 /* Config.swift */; };
 		4846938D2ECC119300A63998 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938C2ECC118E00A63998 /* README.md */; };
 		4846938F2ECC11AB00A63998 /* TEAM_ROLES.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938E2ECC11A700A63998 /* TEAM_ROLES.md */; };
+		9C8C3E8DD9F0C2CDC4ABFF6D /* ResourceMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0671A0B5D9A1561EDE06B29C /* ResourceMapViewController.swift */; };
+		A21E454109642F72A2AC49B5 /* ResourcesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996D32BBFD04C497E56C6BC2 /* ResourcesAPI.swift */; };
+		A2BF2AAC02C7A152D8C9E3FB /* ResourceMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E02C7A147A260483FE707BE1 /* ResourceMapView.swift */; };
+		B3B5DD9FFA1F26A8F78683A8 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA8AEA1EA282BB74F2EE1D31 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +67,9 @@
 		026A92B82ECBFCC40017D43B /* Aura.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aura.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		026A92CE2ECBFCC90017D43B /* AuraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		026A92D82ECBFCC90017D43B /* AuraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0671A0B5D9A1561EDE06B29C /* ResourceMapViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResourceMapViewController.swift; sourceTree = "<group>"; };
+		1D3CDE1E071911EA495DFF8B /* APIConfigs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = APIConfigs.swift; sourceTree = "<group>"; };
+		1E77AE43BCE1A46BDC593343 /* ResourceAnnotation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResourceAnnotation.swift; sourceTree = "<group>"; };
 		484693432ECC09B100A63998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484693442ECC09B100A63998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484693452ECC09B100A63998 /* AuraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuraApp.swift; sourceTree = "<group>"; };
@@ -91,22 +101,24 @@
 		484693892ECC115E00A63998 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4846938C2ECC118E00A63998 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4846938E2ECC11A700A63998 /* TEAM_ROLES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TEAM_ROLES.md; sourceTree = "<group>"; };
+		996D32BBFD04C497E56C6BC2 /* ResourcesAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResourcesAPI.swift; sourceTree = "<group>"; };
+		CA8AEA1EA282BB74F2EE1D31 /* NetworkManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E02C7A147A260483FE707BE1 /* ResourceMapView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResourceMapView.swift; sourceTree = "<group>"; };
+		EE2C8A3FAC0E7982762767D2 /* ResourcesService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ResourcesService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		026A92BA2ECBFCC40017D43B /* Aura */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Aura;
-			sourceTree = "<group>";
-		};
 		026A92D12ECBFCC90017D43B /* AuraTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = AuraTests;
 			sourceTree = "<group>";
 		};
 		026A92DB2ECBFCC90017D43B /* AuraUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
 			path = AuraUITests;
 			sourceTree = "<group>";
 		};
@@ -233,6 +245,9 @@
 			children = (
 				484693722ECC0EE300A63998 /* ResourcesViewController.swift */,
 				484693742ECC0EF500A63998 /* ResourcesView.swift */,
+				0671A0B5D9A1561EDE06B29C /* ResourceMapViewController.swift */,
+				1E77AE43BCE1A46BDC593343 /* ResourceAnnotation.swift */,
+				E02C7A147A260483FE707BE1 /* ResourceMapView.swift */,
 			);
 			path = "Resources Screen";
 			sourceTree = "<group>";
@@ -253,6 +268,10 @@
 				4846937E2ECC0F8400A63998 /* AuthService.swift */,
 				484693802ECC0FCF00A63998 /* FirestoreService.swift */,
 				484693822ECC0FE500A63998 /* ChatService.swift */,
+				996D32BBFD04C497E56C6BC2 /* ResourcesAPI.swift */,
+				CA8AEA1EA282BB74F2EE1D31 /* NetworkManager.swift */,
+				1D3CDE1E071911EA495DFF8B /* APIConfigs.swift */,
+				EE2C8A3FAC0E7982762767D2 /* ResourcesService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -291,8 +310,6 @@
 			dependencies = (
 			);
 			name = Aura;
-			packageProductDependencies = (
-			);
 			productName = Aura;
 			productReference = 026A92B82ECBFCC40017D43B /* Aura.app */;
 			productType = "com.apple.product-type.application";
@@ -314,8 +331,6 @@
 				026A92D12ECBFCC90017D43B /* AuraTests */,
 			);
 			name = AuraTests;
-			packageProductDependencies = (
-			);
 			productName = AuraTests;
 			productReference = 026A92CE2ECBFCC90017D43B /* AuraTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -337,8 +352,6 @@
 				026A92DB2ECBFCC90017D43B /* AuraUITests */,
 			);
 			name = AuraUITests;
-			packageProductDependencies = (
-			);
 			productName = AuraUITests;
 			productReference = 026A92D82ECBFCC90017D43B /* AuraUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -446,6 +459,13 @@
 				484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */,
 				4846936F2ECC0EA200A63998 /* ChatViewController.swift in Sources */,
 				484693572ECC09B100A63998 /* ViewController.swift in Sources */,
+				A21E454109642F72A2AC49B5 /* ResourcesAPI.swift in Sources */,
+				B3B5DD9FFA1F26A8F78683A8 /* NetworkManager.swift in Sources */,
+				45ABBAEE35DB263E20F6BD19 /* APIConfigs.swift in Sources */,
+				4725AABA0B34E5F17308C212 /* ResourcesService.swift in Sources */,
+				9C8C3E8DD9F0C2CDC4ABFF6D /* ResourceMapViewController.swift in Sources */,
+				0F3E2805727019D2BD579321 /* ResourceAnnotation.swift in Sources */,
+				A2BF2AAC02C7A152D8C9E3FB /* ResourceMapView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
