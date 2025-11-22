@@ -117,6 +117,7 @@ class ResourcesViewController: UIViewController {
     
     // National and mock nearby resources
     private var resources: [MentalHealthResource] = []
+    private var currentUserLocation: CLLocation?  // Store user location for map
 
     override func loadView() {
         view = resourcesView
@@ -140,6 +141,7 @@ class ResourcesViewController: UIViewController {
     
     private func setupButtonActions() {
         resourcesView.findNearbyButton.addTarget(self, action: #selector(findNearbyTapped), for: .touchUpInside)
+        resourcesView.viewMapButton.addTarget(self, action: #selector(viewMapTapped), for: .touchUpInside)
         resourcesView.chatWithAuraButton.addTarget(self, action: #selector(chatWithAuraTapped), for: .touchUpInside)
     }
     
@@ -211,11 +213,27 @@ class ResourcesViewController: UIViewController {
             self.showLoading(false)
             switch result {
             case .success(let loc):
+                self.currentUserLocation = loc  // Store for map view
                 self.loadNearbyResources(for: loc)
             case .failure(let err):
                 self.handleLocationError(err)
             }
         }
+    }
+    
+    @objc private func viewMapTapped() {
+        // Filter resources that have coordinates
+        let mappableResources = resources.filter { $0.latitude != nil && $0.longitude != nil }
+        
+        if mappableResources.isEmpty {
+            showErrorAlert(message: "No resources with locations available. Try 'Find Nearby Support' first.")
+            return
+        }
+        
+        // Present map view controller
+        let mapVC = ResourceMapViewController(resources: mappableResources, userLocation: currentUserLocation)
+        mapVC.modalPresentationStyle = .fullScreen
+        present(mapVC, animated: true)
     }
 
     @objc private func chatWithAuraTapped() {

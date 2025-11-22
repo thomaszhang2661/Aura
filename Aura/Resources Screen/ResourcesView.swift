@@ -4,6 +4,7 @@ final class ResourcesView: UIView {
     
     // MARK: - UI Components
     let findNearbyButton = UIButton(type: .system)
+    let viewMapButton = UIButton(type: .system)
     let chatWithAuraButton = UIButton(type: .system)
     let resourcesTableView = UITableView(frame: .zero, style: .insetGrouped)
 
@@ -33,9 +34,9 @@ final class ResourcesView: UIView {
 
     private func setupLayout() {
         // Vertical Stack for buttons
-        let buttonStack = UIStackView(arrangedSubviews: [findNearbyButton, chatWithAuraButton])
+        let buttonStack = UIStackView(arrangedSubviews: [findNearbyButton, viewMapButton, chatWithAuraButton])
         buttonStack.axis = .vertical
-        buttonStack.spacing = 16
+        buttonStack.spacing = 12
         buttonStack.alignment = .fill
         buttonStack.distribution = .fillEqually
 
@@ -47,19 +48,20 @@ final class ResourcesView: UIView {
         
         NSLayoutConstraint.activate([
             // Button Stack
-            buttonStack.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 20),
-            buttonStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            buttonStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            buttonStack.heightAnchor.constraint(equalToConstant: 180),
+            buttonStack.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 16),
+            buttonStack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
+            buttonStack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
+            buttonStack.heightAnchor.constraint(equalToConstant: 210),
             
             // Table View
-            resourcesTableView.topAnchor.constraint(equalTo: buttonStack.bottomAnchor, constant: 20),
+            resourcesTableView.topAnchor.constraint(equalTo: buttonStack.bottomAnchor, constant: 16),
             resourcesTableView.leadingAnchor.constraint(equalTo: leadingAnchor),
             resourcesTableView.trailingAnchor.constraint(equalTo: trailingAnchor),
             resourcesTableView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
 
         styleCardButton(findNearbyButton, title: "📍 Find Nearby Support", color: .systemTeal)
+        styleCardButton(viewMapButton, title: "🗺️ View on Map", color: .systemIndigo)
         styleCardButton(chatWithAuraButton, title: "💬 Chat with Aura", color: .systemPurple)
     }
 
