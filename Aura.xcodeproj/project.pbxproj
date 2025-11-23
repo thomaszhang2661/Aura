@@ -43,6 +43,7 @@
 		4846938A2ECC115E00A63998 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693892ECC115E00A63998 /* Config.swift */; };
 		4846938D2ECC119300A63998 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938C2ECC118E00A63998 /* README.md */; };
 		4846938F2ECC11AB00A63998 /* TEAM_ROLES.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938E2ECC11A700A63998 /* TEAM_ROLES.md */; };
+		4871B79A2ED2C20500A38065 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4871B7992ED2C20500A38065 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 			files = (
 				0777BCC72ECD708A008C1FDA /* FirebaseAuth in Frameworks */,
 				0777BCC92ECD708A008C1FDA /* FirebaseFirestore in Frameworks */,
+				4871B79A2ED2C20500A38065 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,6 +386,7 @@
 			packageProductDependencies = (
 				0777BCC62ECD708A008C1FDA /* FirebaseAuth */,
 				0777BCC82ECD708A008C1FDA /* FirebaseFirestore */,
+				4871B7992ED2C20500A38065 /* FirebaseStorage */,
 			);
 			productName = Aura;
 			productReference = 026A92B82ECBFCC40017D43B /* Aura.app */;
@@ -908,6 +911,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0777BCC52ECD708A008C1FDA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		4871B7992ED2C20500A38065 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0777BCC52ECD708A008C1FDA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

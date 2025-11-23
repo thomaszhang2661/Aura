@@ -40,7 +40,7 @@ final class LoginView: UIView {
         titleLabel.textAlignment = .center
 
         // Email + password fields
-        makeUnderline(emailField, placeholder: "Enter Your Email And")
+        makeUnderline(emailField, placeholder: "Enter Your Email")
         makeUnderline(passwordField, placeholder: "Password")
         passwordField.isSecureTextEntry = true
 
