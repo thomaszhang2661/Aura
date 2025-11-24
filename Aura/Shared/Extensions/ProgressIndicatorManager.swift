@@ -18,9 +18,10 @@ extension UIViewController:ProgressSpinnerDelegate{
     }
     
     func hideActivityIndicator(){
+        print("hide")
         spinnerVC?.willMove(toParent: nil)
         spinnerVC?.view.removeFromSuperview()
         spinnerVC?.removeFromParent()
+        spinnerVC = nil
     }
 }
-

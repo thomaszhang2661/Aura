@@ -20,7 +20,8 @@ final class MoodLogViewController: UIViewController {
     private var selectedMood: MoodEntry.Mood? {
         didSet { moodView.updateMoodSelection(selectedMood) }
     }
-    
+    private var isSaving = false
+
     // MARK: - Lifecycle
     override func loadView() {
         view = MoodLogView()
@@ -62,30 +63,32 @@ final class MoodLogViewController: UIViewController {
     }
     
     @objc private func saveMood() {
+        guard !isSaving else { return }
+        isSaving = true
         showActivityIndicator()
         guard let uid = AuthService.shared.currentUserUID else {
             hideActivityIndicator()
+            isSaving = false
             showAlert(title: "Not Logged In", message: "Please login to save your mood.")
             return
         }
         guard let mood = selectedMood else {
             hideActivityIndicator()
+            isSaving = false
             showAlert(title: "Pick a mood", message: "Please select a mood before saving.")
             return
         }
         
         let note = moodView.noteTextView.text.trimmingCharacters(in: .whitespacesAndNewlines)
         MoodRepository.shared.addMood(uid: uid, mood: mood, note: note.isEmpty ? nil : note) { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success:
-                    self?.hideActivityIndicator()
-                    self?.moodView.noteTextView.text = ""
-                    self?.moodView.updateNotePlaceholderVisibility()
-                    self?.loadRecentEntries()
-                case .failure(let error):
+            switch result {
+            case .success(let newEntry):
+                self?.handleSaveSuccess(newEntry)
+            case .failure(let error):
+                DispatchQueue.main.async {
                     self?.hideActivityIndicator()
                     self?.showAlert(title: "Save failed", message: error.localizedDescription)
+                    self?.isSaving = false
                 }
             }
         }
@@ -94,11 +97,11 @@ final class MoodLogViewController: UIViewController {
     private func loadRecentEntries() {
         guard let uid = AuthService.shared.currentUserUID else { return }
         MoodRepository.shared.fetchRecent(uid: uid) { [weak self] result in
-            DispatchQueue.main.async {
-                switch result {
-                case .success(let entries):
-                    self?.entries = entries
-                case .failure(let error):
+            switch result {
+            case .success(let entries):
+                self?.applyEntries(entries, scrollToTop: false)
+            case .failure(let error):
+                DispatchQueue.main.async {
                     self?.showAlert(title: "Load failed", message: error.localizedDescription)
                 }
             }
@@ -110,6 +113,41 @@ final class MoodLogViewController: UIViewController {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
+    }
+    
+    // MARK: - UI Updates
+    private func handleSaveSuccess(_ newEntry: MoodEntry) {
+        DispatchQueue.main.async {
+            self.hideActivityIndicator()
+            self.resetInputUI()
+            self.appendAndRefresh(newEntry)
+            self.isSaving = false
+        }
+    }
+    
+    private func resetInputUI() {
+        print("reset input")
+        moodView.noteTextView.text = ""
+        moodView.updateNotePlaceholderVisibility()
+        moodView.noteTextView.resignFirstResponder()
+    }
+    
+    private func appendAndRefresh(_ entry: MoodEntry) {
+        print("repend and fresh")
+        var updated = entries
+        updated.insert(entry, at: 0)
+        applyEntries(updated, scrollToTop: true)
+        loadRecentEntries() // sync with latest ordering
+    }
+    
+    private func applyEntries(_ newEntries: [MoodEntry], scrollToTop: Bool) {
+        DispatchQueue.main.async {
+            self.entries = newEntries
+            self.moodView.historyTableView.reloadData()
+            if scrollToTop, !newEntries.isEmpty {
+                self.moodView.historyTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
+            }
+        }
     }
 }
 
