@@ -24,14 +24,22 @@ final class ChatViewController: UIViewController {
         super.viewDidLoad()
         title = "AI Chat"
         view.backgroundColor = UIColor.systemBackground
-        
+
         chatView.tableView.dataSource = self
         chatView.tableView.delegate = self
         chatView.tableView.register(ChatMessageCell.self, forCellReuseIdentifier: "ChatMessageCell")
         chatView.inputTextView.delegate = self
         chatView.sendButton.addTarget(self, action: #selector(sendTapped), for: .touchUpInside)
-        
+
+        // Keyboard handling
+        setupKeyboardObservers()
+        addDismissKeyboardGesture()
+
         loadHistory()
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
     }
     
     // MARK: - Actions
@@ -117,6 +125,55 @@ extension ChatViewController: UITableViewDataSource, UITableViewDelegate {
 extension ChatViewController: UITextViewDelegate {
     func textViewDidChange(_ textView: UITextView) {
         chatView.updatePlaceholderVisibility()
+    }
+}
+
+// MARK: - Keyboard
+private extension ChatViewController {
+    func setupKeyboardObservers() {
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillShow(_:)),
+            name: UIResponder.keyboardWillShowNotification,
+            object: nil
+        )
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(keyboardWillHide(_:)),
+            name: UIResponder.keyboardWillHideNotification,
+            object: nil
+        )
+    }
+
+    @objc func keyboardWillShow(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let frame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect,
+              let duration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval,
+              let curveValue = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt else { return }
+
+        let height = frame.height - view.safeAreaInsets.bottom
+        UIView.animate(withDuration: duration,
+                       delay: 0,
+                       options: UIView.AnimationOptions(rawValue: curveValue << 16),
+                       animations: {
+            self.chatView.bottomInset = height + 8
+            self.chatView.layoutIfNeeded()
+            self.scrollToBottom()
+        })
+    }
+
+    @objc func keyboardWillHide(_ notification: Notification) {
+        guard let userInfo = notification.userInfo,
+              let duration = userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval,
+              let curveValue = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as? UInt else { return }
+
+        UIView.animate(withDuration: duration,
+                       delay: 0,
+                       options: UIView.AnimationOptions(rawValue: curveValue << 16),
+                       animations: {
+            self.chatView.bottomInset = 0
+            self.chatView.layoutIfNeeded()
+        })
     }
 }
 

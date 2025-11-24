@@ -16,9 +16,9 @@
 		0777BCCE2ECE85D9008C1FDA /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCCD2ECE85D7008C1FDA /* ChatMessage.swift */; };
 		0777BCD12ECE85F0008C1FDA /* MoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD02ECE85EE008C1FDA /* MoodRepository.swift */; };
 		0777BCD42ECE8B28008C1FDA /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */; };
-		0777BCEF2ED2F7E9008C1FDA /* ChatServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */; };
 		0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD92ECEA2F7008C1FDA /* LoginRootView.swift */; };
 		0777BCE82ECFF4EC008C1FDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */; };
+		0777BCEF2ED2F7E9008C1FDA /* ChatServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */; };
 		4811CC402ED40478003A9A3B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC3F2ED40478003A9A3B /* Resources.swift */; };
 		4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */; };
 		4811CC472ED405CF003A9A3B /* ResourcesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC462ED405CF003A9A3B /* ResourcesMapViewController.swift */; };
@@ -32,6 +32,7 @@
 		4811CC602ED407C3003A9A3B /* APIConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC502ED407C3003A9A3B /* APIConfigs.swift */; };
 		4811CC622ED407C3003A9A3B /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC532ED407C3003A9A3B /* FirestoreService.swift */; };
 		4811CC642ED40A16003A9A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC632ED40A16003A9A3B /* SceneDelegate.swift */; };
+		4811CC792ED41DC1003A9A3B /* UIViewControllerKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC782ED41D78003A9A3B /* UIViewControllerKeyboardManager.swift */; };
 		4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484693442ECC09B100A63998 /* Assets.xcassets */; };
 		484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484693492ECC09B100A63998 /* LaunchScreen.storyboard */; };
 		484693522ECC09B100A63998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846934B2ECC09B100A63998 /* Main.storyboard */; };
@@ -83,9 +84,9 @@
 		0777BCCD2ECE85D7008C1FDA /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		0777BCD02ECE85EE008C1FDA /* MoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRepository.swift; sourceTree = "<group>"; };
 		0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
-		0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServiceMock.swift; sourceTree = "<group>"; };
 		0777BCD92ECEA2F7008C1FDA /* LoginRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootView.swift; sourceTree = "<group>"; };
 		0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServiceMock.swift; sourceTree = "<group>"; };
 		4811CC3F2ED40478003A9A3B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesMapView.swift; sourceTree = "<group>"; };
 		4811CC462ED405CF003A9A3B /* ResourcesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesMapViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +100,7 @@
 		4811CC572ED407C3003A9A3B /* ResourcesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesAPI.swift; sourceTree = "<group>"; };
 		4811CC582ED407C3003A9A3B /* ResourcesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesService.swift; sourceTree = "<group>"; };
 		4811CC632ED40A16003A9A3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4811CC782ED41D78003A9A3B /* UIViewControllerKeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerKeyboardManager.swift; sourceTree = "<group>"; };
 		484693432ECC09B100A63998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484693442ECC09B100A63998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484693472ECC09B100A63998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -307,6 +309,14 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		4811CC772ED41D6C003A9A3B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4811CC782ED41D78003A9A3B /* UIViewControllerKeyboardManager.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		4846934E2ECC09B100A63998 /* Aura */ = {
 			isa = PBXGroup;
 			children = (
@@ -388,6 +398,7 @@
 		484693842ECC10DA00A63998 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				4811CC772ED41D6C003A9A3B /* Extensions */,
 				0777BCD82ECE8B86008C1FDA /* Components */,
 				0777BCBF2ECD67D6008C1FDA /* Contracts */,
 			);
@@ -571,6 +582,7 @@
 				0777BCEF2ED2F7E9008C1FDA /* ChatServiceMock.swift in Sources */,
 				4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */,
 				4846936B2ECC0E6500A63998 /* MoodLogView.swift in Sources */,
+				4811CC792ED41DC1003A9A3B /* UIViewControllerKeyboardManager.swift in Sources */,
 				0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */,
 				4846935A2ECC0D5F00A63998 /* HomeView.swift in Sources */,
 				484693862ECC10F200A63998 /* LoadingIndicator.swift in Sources */,

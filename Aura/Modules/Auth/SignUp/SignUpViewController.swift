@@ -22,6 +22,8 @@ final class SignUpViewController: UIViewController {
         let tap = UITapGestureRecognizer(target: self,
                                          action: #selector(bottomTapped))
         signUpView.bottomLabel.addGestureRecognizer(tap)
+
+        addDismissKeyboardGesture()
     }
 
     // MARK: - Actions

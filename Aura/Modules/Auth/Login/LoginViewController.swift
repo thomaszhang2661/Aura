@@ -22,13 +22,8 @@ final class LoginViewController: UIViewController {
                                          action: #selector(bottomTapped))
         loginView.bottomLabel.addGestureRecognizer(tap)
 
-        // 👇 temporary Logout button in top-right corner
-        navigationItem.rightBarButtonItem = UIBarButtonItem(
-            title: "Logout",
-            style: .plain,
-            target: self,
-            action: #selector(logoutTapped)
-        )
+        addDismissKeyboardGesture()
+
     }
 
     // MARK: - Actions
@@ -67,27 +62,6 @@ final class LoginViewController: UIViewController {
     @objc private func bottomTapped() {
         let vc = SignUpViewController()
         navigationController?.pushViewController(vc, animated: true)
-    }
-
-    @objc private func logoutTapped() {
-        let result = AuthService.shared.signOut()
-
-        switch result {
-        case .success:
-            print("✅ Logout success")
-
-            EventBus.shared.emit(.didLogout)
-
-            // Updated alert title
-            showAlert("You have been logged out.", title: "Success")
-
-        case .failure(let error):
-            print("❌ Logout failed:", error)
-            showAlert(
-                "Logout failed: \(error.localizedDescription)",
-                title: "Logout Error"
-            )
-        }
     }
 
     // MARK: - Helpers

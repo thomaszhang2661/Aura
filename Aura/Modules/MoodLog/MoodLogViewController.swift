@@ -34,6 +34,7 @@ final class MoodLogViewController: UIViewController {
         moodView.historyTableView.dataSource = self
         moodView.historyTableView.delegate = self
         moodView.noteTextView.delegate = self
+        addDismissKeyboardGesture()
         
         setupMoodButtons()
         moodView.saveButton.addTarget(self, action: #selector(saveMood), for: .touchUpInside)

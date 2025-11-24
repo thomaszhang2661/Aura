@@ -15,6 +15,14 @@ final class ChatView: UIView {
     private let placeholderLabel = UILabel()
     let sendButton = UIButton(type: .system)
     private let inputContainer = UIView()
+    private var inputBottomConstraint: NSLayoutConstraint?
+
+    // This inset is updated by keyboard notifications
+    var bottomInset: CGFloat = 0 {
+        didSet {
+            inputBottomConstraint?.constant = -8 - bottomInset
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -81,16 +89,15 @@ final class ChatView: UIView {
         inputContainer.translatesAutoresizingMaskIntoConstraints = false
         inputTextView.translatesAutoresizingMaskIntoConstraints = false
         sendButton.translatesAutoresizingMaskIntoConstraints = false
-        
-        NSLayoutConstraint.activate([
+
+        let constraints = [
             tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
-            
-            inputContainer.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 8),
+            tableView.bottomAnchor.constraint(equalTo: inputContainer.topAnchor, constant: -8),
+
             inputContainer.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
             inputContainer.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
-            inputContainer.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -8),
             
             inputTextView.topAnchor.constraint(equalTo: inputContainer.topAnchor, constant: 8),
             inputTextView.leadingAnchor.constraint(equalTo: inputContainer.leadingAnchor, constant: 10),
@@ -101,7 +108,13 @@ final class ChatView: UIView {
             sendButton.centerYAnchor.constraint(equalTo: inputContainer.centerYAnchor),
             sendButton.widthAnchor.constraint(equalToConstant: 72),
             sendButton.heightAnchor.constraint(equalToConstant: 40)
-        ])
+        ]
+
+        NSLayoutConstraint.activate(constraints)
+
+        // Keep a handle to adjust when keyboard moves
+        inputBottomConstraint = inputContainer.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -8)
+        inputBottomConstraint?.isActive = true
     }
     
     func updatePlaceholderVisibility() {
