@@ -22,6 +22,10 @@
 		0777BCE42ECEBEC4008C1FDA /* SceneDelegate.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCE32ECEBEC2008C1FDA /* SceneDelegate.swift.swift */; };
 		0777BCE62ECEBF93008C1FDA /* AuraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCE52ECEBF91008C1FDA /* AuraApp.swift */; };
 		0777BCE82ECFF4EC008C1FDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */; };
+		4811CC402ED40478003A9A3B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC3F2ED40478003A9A3B /* Resources.swift */; };
+		4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */; };
+		4811CC472ED405CF003A9A3B /* ResourcesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC462ED405CF003A9A3B /* ResourcesMapViewController.swift */; };
+		4811CC492ED40607003A9A3B /* ResourcesAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC482ED405FD003A9A3B /* ResourcesAnnotation.swift */; };
 		4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484693442ECC09B100A63998 /* Assets.xcassets */; };
 		484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484693492ECC09B100A63998 /* LaunchScreen.storyboard */; };
 		484693522ECC09B100A63998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846934B2ECC09B100A63998 /* Main.storyboard */; };
@@ -80,6 +84,10 @@
 		0777BCE32ECEBEC2008C1FDA /* SceneDelegate.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift.swift; sourceTree = "<group>"; };
 		0777BCE52ECEBF91008C1FDA /* AuraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuraApp.swift; sourceTree = "<group>"; };
 		0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4811CC3F2ED40478003A9A3B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
+		4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesMapView.swift; sourceTree = "<group>"; };
+		4811CC462ED405CF003A9A3B /* ResourcesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesMapViewController.swift; sourceTree = "<group>"; };
+		4811CC482ED405FD003A9A3B /* ResourcesAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesAnnotation.swift; sourceTree = "<group>"; };
 		484693432ECC09B100A63998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484693442ECC09B100A63998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484693472ECC09B100A63998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -213,6 +221,7 @@
 				0777BCCD2ECE85D7008C1FDA /* ChatMessage.swift */,
 				0777BCCB2ECE85CA008C1FDA /* MoodEntry.swift */,
 				0777BCBA2ECD6784008C1FDA /* User.swift */,
+				4811CC3F2ED40478003A9A3B /* Resources.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -343,8 +352,11 @@
 		484693712ECC0EBD00A63998 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4811CC482ED405FD003A9A3B /* ResourcesAnnotation.swift */,
 				484693722ECC0EE300A63998 /* ResourcesViewController.swift */,
 				484693742ECC0EF500A63998 /* ResourcesView.swift */,
+				4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */,
+				4811CC462ED405CF003A9A3B /* ResourcesMapViewController.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -525,12 +537,15 @@
 				0777BCCC2ECE85CC008C1FDA /* MoodEntry.swift in Sources */,
 				0777BCCE2ECE85D9008C1FDA /* ChatMessage.swift in Sources */,
 				484693532ECC09B100A63998 /* AppDelegate.swift in Sources */,
+				4811CC472ED405CF003A9A3B /* ResourcesMapViewController.swift in Sources */,
 				484693732ECC0EE300A63998 /* ResourcesViewController.swift in Sources */,
 				0777BCD12ECE85F0008C1FDA /* MoodRepository.swift in Sources */,
 				4846936D2ECC0E8D00A63998 /* ChatView.swift in Sources */,
 				484693612ECC0DB900A63998 /* LoginView.swift in Sources */,
+				4811CC492ED40607003A9A3B /* ResourcesAnnotation.swift in Sources */,
 				0777BCC22ECD6883008C1FDA /* FirestoreCollections.swift in Sources */,
 				0777BCD42ECE8B28008C1FDA /* ChatRepository.swift in Sources */,
+				4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */,
 				4846936B2ECC0E6500A63998 /* MoodLogView.swift in Sources */,
 				0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */,
 				0777BCE02ECEAEFA008C1FDA /* ContentView.swift in Sources */,
@@ -545,6 +560,7 @@
 				0777BCBE2ECD67AC008C1FDA /* AuthService.swift in Sources */,
 				0777BCD72ECE8B42008C1FDA /* LocationService.swift in Sources */,
 				484693752ECC0EF500A63998 /* ResourcesView.swift in Sources */,
+				4811CC402ED40478003A9A3B /* Resources.swift in Sources */,
 				484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */,
 				4846936F2ECC0EA200A63998 /* ChatViewController.swift in Sources */,
 				484693572ECC09B100A63998 /* HomeViewController.swift in Sources */,
