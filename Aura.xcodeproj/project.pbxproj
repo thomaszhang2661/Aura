@@ -32,7 +32,10 @@
 		4811CC602ED407C3003A9A3B /* APIConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC502ED407C3003A9A3B /* APIConfigs.swift */; };
 		4811CC622ED407C3003A9A3B /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC532ED407C3003A9A3B /* FirestoreService.swift */; };
 		4811CC642ED40A16003A9A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC632ED40A16003A9A3B /* SceneDelegate.swift */; };
-		4811CC792ED41DC1003A9A3B /* UIViewControllerKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC782ED41D78003A9A3B /* UIViewControllerKeyboardManager.swift */; };
+		4811CC792ED41DC1003A9A3B /* DismissKeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC782ED41D78003A9A3B /* DismissKeyboardManager.swift */; };
+		4811CC7D2ED42423003A9A3B /* ProgressSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC7B2ED42423003A9A3B /* ProgressSpinnerViewController.swift */; };
+		4811CC7E2ED42423003A9A3B /* ProgressSpinnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC7A2ED42423003A9A3B /* ProgressSpinnerDelegate.swift */; };
+		4811CC802ED42492003A9A3B /* ProgressIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC7F2ED4247D003A9A3B /* ProgressIndicatorManager.swift */; };
 		4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484693442ECC09B100A63998 /* Assets.xcassets */; };
 		484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484693492ECC09B100A63998 /* LaunchScreen.storyboard */; };
 		484693522ECC09B100A63998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846934B2ECC09B100A63998 /* Main.storyboard */; };
@@ -49,7 +52,6 @@
 		4846936F2ECC0EA200A63998 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4846936E2ECC0EA200A63998 /* ChatViewController.swift */; };
 		484693732ECC0EE300A63998 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693722ECC0EE300A63998 /* ResourcesViewController.swift */; };
 		484693752ECC0EF500A63998 /* ResourcesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693742ECC0EF500A63998 /* ResourcesView.swift */; };
-		484693862ECC10F200A63998 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693852ECC10F200A63998 /* LoadingIndicator.swift */; };
 		484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693872ECC110900A63998 /* IntegrationContracts.swift */; };
 		4846938A2ECC115E00A63998 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693892ECC115E00A63998 /* Config.swift */; };
 		4846938D2ECC119300A63998 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938C2ECC118E00A63998 /* README.md */; };
@@ -100,7 +102,10 @@
 		4811CC572ED407C3003A9A3B /* ResourcesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesAPI.swift; sourceTree = "<group>"; };
 		4811CC582ED407C3003A9A3B /* ResourcesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesService.swift; sourceTree = "<group>"; };
 		4811CC632ED40A16003A9A3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4811CC782ED41D78003A9A3B /* UIViewControllerKeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerKeyboardManager.swift; sourceTree = "<group>"; };
+		4811CC782ED41D78003A9A3B /* DismissKeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardManager.swift; sourceTree = "<group>"; };
+		4811CC7A2ED42423003A9A3B /* ProgressSpinnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerDelegate.swift; sourceTree = "<group>"; };
+		4811CC7B2ED42423003A9A3B /* ProgressSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerViewController.swift; sourceTree = "<group>"; };
+		4811CC7F2ED4247D003A9A3B /* ProgressIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorManager.swift; sourceTree = "<group>"; };
 		484693432ECC09B100A63998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484693442ECC09B100A63998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484693472ECC09B100A63998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -118,7 +123,6 @@
 		4846936E2ECC0EA200A63998 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		484693722ECC0EE300A63998 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		484693742ECC0EF500A63998 /* ResourcesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesView.swift; sourceTree = "<group>"; };
-		484693852ECC10F200A63998 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
 		484693872ECC110900A63998 /* IntegrationContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationContracts.swift; sourceTree = "<group>"; };
 		484693892ECC115E00A63998 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4846938C2ECC118E00A63998 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -289,7 +293,7 @@
 		0777BCD82ECE8B86008C1FDA /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				484693852ECC10F200A63998 /* LoadingIndicator.swift */,
+				4811CC7C2ED42423003A9A3B /* Progress Indicator */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -312,9 +316,19 @@
 		4811CC772ED41D6C003A9A3B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4811CC782ED41D78003A9A3B /* UIViewControllerKeyboardManager.swift */,
+				4811CC7F2ED4247D003A9A3B /* ProgressIndicatorManager.swift */,
+				4811CC782ED41D78003A9A3B /* DismissKeyboardManager.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4811CC7C2ED42423003A9A3B /* Progress Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				4811CC7A2ED42423003A9A3B /* ProgressSpinnerDelegate.swift */,
+				4811CC7B2ED42423003A9A3B /* ProgressSpinnerViewController.swift */,
+			);
+			path = "Progress Indicator";
 			sourceTree = "<group>";
 		};
 		4846934E2ECC09B100A63998 /* Aura */ = {
@@ -582,10 +596,9 @@
 				0777BCEF2ED2F7E9008C1FDA /* ChatServiceMock.swift in Sources */,
 				4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */,
 				4846936B2ECC0E6500A63998 /* MoodLogView.swift in Sources */,
-				4811CC792ED41DC1003A9A3B /* UIViewControllerKeyboardManager.swift in Sources */,
+				4811CC792ED41DC1003A9A3B /* DismissKeyboardManager.swift in Sources */,
 				0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */,
 				4846935A2ECC0D5F00A63998 /* HomeView.swift in Sources */,
-				484693862ECC10F200A63998 /* LoadingIndicator.swift in Sources */,
 				484693692ECC0E4E00A63998 /* MoodLogViewController.swift in Sources */,
 				4846935F2ECC0DA200A63998 /* LoginViewController.swift in Sources */,
 				4811CC5A2ED407C3003A9A3B /* ChatService.swift in Sources */,
@@ -593,10 +606,13 @@
 				4811CC5C2ED407C3003A9A3B /* LocationService.swift in Sources */,
 				4811CC5D2ED407C3003A9A3B /* MoodStore.swift in Sources */,
 				4811CC5E2ED407C3003A9A3B /* ResourcesAPI.swift in Sources */,
+				4811CC802ED42492003A9A3B /* ProgressIndicatorManager.swift in Sources */,
 				4811CC5F2ED407C3003A9A3B /* NetworkManager.swift in Sources */,
 				4811CC602ED407C3003A9A3B /* APIConfigs.swift in Sources */,
 				4811CC622ED407C3003A9A3B /* FirestoreService.swift in Sources */,
 				484693632ECC0DDC00A63998 /* SignUpView.swift in Sources */,
+				4811CC7D2ED42423003A9A3B /* ProgressSpinnerViewController.swift in Sources */,
+				4811CC7E2ED42423003A9A3B /* ProgressSpinnerDelegate.swift in Sources */,
 				4846938A2ECC115E00A63998 /* Config.swift in Sources */,
 				0777BCBE2ECD67AC008C1FDA /* AuthService.swift in Sources */,
 				484693752ECC0EF500A63998 /* ResourcesView.swift in Sources */,

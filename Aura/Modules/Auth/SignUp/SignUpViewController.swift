@@ -30,6 +30,7 @@ final class SignUpViewController: UIViewController {
 
     @objc private func signUpTapped() {
         // Read input
+        showActivityIndicator()
         let email = signUpView.emailField.text?
             .trimmingCharacters(in: .whitespacesAndNewlines) ?? ""
         let password = signUpView.passwordField.text?
@@ -39,11 +40,13 @@ final class SignUpViewController: UIViewController {
 
         // Basic validation
         guard !email.isEmpty, !password.isEmpty, !confirm.isEmpty else {
+            hideActivityIndicator()
             showAlert("All fields are required.")
             return
         }
 
         guard password == confirm else {
+            hideActivityIndicator()
             showAlert("Passwords do not match.")
             return
         }
@@ -56,6 +59,7 @@ final class SignUpViewController: UIViewController {
                     print("✅ Sign up success for uid:", user.uid)
 
                     // Notify others (Member C) that login succeeded
+                    self?.hideActivityIndicator()
                     EventBus.shared.emit(.didLogin(uid: user.uid))
 
                     self?.goToHome()

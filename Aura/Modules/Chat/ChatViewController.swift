@@ -124,7 +124,6 @@ private extension ChatViewController {
     @objc func openResourcesTapped() {
         // Emit deep link style event so Home can route
         EventBus.shared.emit(.openResources)
-//        navigationController?.popViewController(animated: true)
     }
 }
 
