@@ -18,14 +18,21 @@
 		0777BCD42ECE8B28008C1FDA /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */; };
 		0777BCD72ECE8B42008C1FDA /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD62ECE8B41008C1FDA /* LocationService.swift */; };
 		0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD92ECEA2F7008C1FDA /* LoginRootView.swift */; };
-		0777BCE02ECEAEFA008C1FDA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCDF2ECEAEF6008C1FDA /* ContentView.swift */; };
-		0777BCE42ECEBEC4008C1FDA /* SceneDelegate.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCE32ECEBEC2008C1FDA /* SceneDelegate.swift.swift */; };
-		0777BCE62ECEBF93008C1FDA /* AuraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCE52ECEBF91008C1FDA /* AuraApp.swift */; };
 		0777BCE82ECFF4EC008C1FDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */; };
 		4811CC402ED40478003A9A3B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC3F2ED40478003A9A3B /* Resources.swift */; };
 		4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */; };
 		4811CC472ED405CF003A9A3B /* ResourcesMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC462ED405CF003A9A3B /* ResourcesMapViewController.swift */; };
 		4811CC492ED40607003A9A3B /* ResourcesAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC482ED405FD003A9A3B /* ResourcesAnnotation.swift */; };
+		4811CC5A2ED407C3003A9A3B /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC522ED407C3003A9A3B /* ChatService.swift */; };
+		4811CC5B2ED407C3003A9A3B /* ResourcesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC582ED407C3003A9A3B /* ResourcesService.swift */; };
+		4811CC5C2ED407C3003A9A3B /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC542ED407C3003A9A3B /* LocationService.swift */; };
+		4811CC5D2ED407C3003A9A3B /* MoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC552ED407C3003A9A3B /* MoodStore.swift */; };
+		4811CC5E2ED407C3003A9A3B /* ResourcesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC572ED407C3003A9A3B /* ResourcesAPI.swift */; };
+		4811CC5F2ED407C3003A9A3B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC562ED407C3003A9A3B /* NetworkManager.swift */; };
+		4811CC602ED407C3003A9A3B /* APIConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC502ED407C3003A9A3B /* APIConfigs.swift */; };
+		4811CC612ED407C3003A9A3B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC512ED407C3003A9A3B /* AuthService.swift */; };
+		4811CC622ED407C3003A9A3B /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC532ED407C3003A9A3B /* FirestoreService.swift */; };
+		4811CC642ED40A16003A9A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC632ED40A16003A9A3B /* SceneDelegate.swift */; };
 		4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484693442ECC09B100A63998 /* Assets.xcassets */; };
 		484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484693492ECC09B100A63998 /* LaunchScreen.storyboard */; };
 		484693522ECC09B100A63998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846934B2ECC09B100A63998 /* Main.storyboard */; };
@@ -80,14 +87,21 @@
 		0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
 		0777BCD62ECE8B41008C1FDA /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		0777BCD92ECEA2F7008C1FDA /* LoginRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootView.swift; sourceTree = "<group>"; };
-		0777BCDF2ECEAEF6008C1FDA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0777BCE32ECEBEC2008C1FDA /* SceneDelegate.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift.swift; sourceTree = "<group>"; };
-		0777BCE52ECEBF91008C1FDA /* AuraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuraApp.swift; sourceTree = "<group>"; };
 		0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4811CC3F2ED40478003A9A3B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesMapView.swift; sourceTree = "<group>"; };
 		4811CC462ED405CF003A9A3B /* ResourcesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesMapViewController.swift; sourceTree = "<group>"; };
 		4811CC482ED405FD003A9A3B /* ResourcesAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesAnnotation.swift; sourceTree = "<group>"; };
+		4811CC502ED407C3003A9A3B /* APIConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigs.swift; sourceTree = "<group>"; };
+		4811CC512ED407C3003A9A3B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		4811CC522ED407C3003A9A3B /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		4811CC532ED407C3003A9A3B /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
+		4811CC542ED407C3003A9A3B /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		4811CC552ED407C3003A9A3B /* MoodStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodStore.swift; sourceTree = "<group>"; };
+		4811CC562ED407C3003A9A3B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4811CC572ED407C3003A9A3B /* ResourcesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesAPI.swift; sourceTree = "<group>"; };
+		4811CC582ED407C3003A9A3B /* ResourcesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesService.swift; sourceTree = "<group>"; };
+		4811CC632ED40A16003A9A3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		484693432ECC09B100A63998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484693442ECC09B100A63998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484693472ECC09B100A63998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -176,8 +190,8 @@
 		0777BCB52ECD666F008C1FDA /* App */ = {
 			isa = PBXGroup;
 			children = (
-				0777BCE32ECEBEC2008C1FDA /* SceneDelegate.swift.swift */,
 				484693432ECC09B100A63998 /* AppDelegate.swift */,
+				4811CC632ED40A16003A9A3B /* SceneDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -282,17 +296,32 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		4811CC592ED407C3003A9A3B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4811CC502ED407C3003A9A3B /* APIConfigs.swift */,
+				4811CC512ED407C3003A9A3B /* AuthService.swift */,
+				4811CC522ED407C3003A9A3B /* ChatService.swift */,
+				4811CC532ED407C3003A9A3B /* FirestoreService.swift */,
+				4811CC542ED407C3003A9A3B /* LocationService.swift */,
+				4811CC552ED407C3003A9A3B /* MoodStore.swift */,
+				4811CC562ED407C3003A9A3B /* NetworkManager.swift */,
+				4811CC572ED407C3003A9A3B /* ResourcesAPI.swift */,
+				4811CC582ED407C3003A9A3B /* ResourcesService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		4846934E2ECC09B100A63998 /* Aura */ = {
 			isa = PBXGroup;
 			children = (
-				0777BCE52ECEBF91008C1FDA /* AuraApp.swift */,
-				0777BCDF2ECEAEF6008C1FDA /* ContentView.swift */,
 				0777BCC02ECD687A008C1FDA /* Config */,
 				0777BCB82ECD6766008C1FDA /* Data */,
 				0777BCB62ECD66A3008C1FDA /* Modules */,
 				0777BCB52ECD666F008C1FDA /* App */,
 				4846938B2ECC117D00A63998 /* Docs */,
 				484693842ECC10DA00A63998 /* Shared */,
+				4811CC592ED407C3003A9A3B /* Services */,
 				484693442ECC09B100A63998 /* Assets.xcassets */,
 				484693472ECC09B100A63998 /* Info.plist */,
 				484693492ECC09B100A63998 /* LaunchScreen.storyboard */,
@@ -540,6 +569,7 @@
 				4811CC472ED405CF003A9A3B /* ResourcesMapViewController.swift in Sources */,
 				484693732ECC0EE300A63998 /* ResourcesViewController.swift in Sources */,
 				0777BCD12ECE85F0008C1FDA /* MoodRepository.swift in Sources */,
+				4811CC642ED40A16003A9A3B /* SceneDelegate.swift in Sources */,
 				4846936D2ECC0E8D00A63998 /* ChatView.swift in Sources */,
 				484693612ECC0DB900A63998 /* LoginView.swift in Sources */,
 				4811CC492ED40607003A9A3B /* ResourcesAnnotation.swift in Sources */,
@@ -548,13 +578,19 @@
 				4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */,
 				4846936B2ECC0E6500A63998 /* MoodLogView.swift in Sources */,
 				0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */,
-				0777BCE02ECEAEFA008C1FDA /* ContentView.swift in Sources */,
-				0777BCE62ECEBF93008C1FDA /* AuraApp.swift in Sources */,
 				4846935A2ECC0D5F00A63998 /* HomeView.swift in Sources */,
 				484693862ECC10F200A63998 /* LoadingIndicator.swift in Sources */,
 				484693692ECC0E4E00A63998 /* MoodLogViewController.swift in Sources */,
-				0777BCE42ECEBEC4008C1FDA /* SceneDelegate.swift.swift in Sources */,
 				4846935F2ECC0DA200A63998 /* LoginViewController.swift in Sources */,
+				4811CC5A2ED407C3003A9A3B /* ChatService.swift in Sources */,
+				4811CC5B2ED407C3003A9A3B /* ResourcesService.swift in Sources */,
+				4811CC5C2ED407C3003A9A3B /* LocationService.swift in Sources */,
+				4811CC5D2ED407C3003A9A3B /* MoodStore.swift in Sources */,
+				4811CC5E2ED407C3003A9A3B /* ResourcesAPI.swift in Sources */,
+				4811CC5F2ED407C3003A9A3B /* NetworkManager.swift in Sources */,
+				4811CC602ED407C3003A9A3B /* APIConfigs.swift in Sources */,
+				4811CC612ED407C3003A9A3B /* AuthService.swift in Sources */,
+				4811CC622ED407C3003A9A3B /* FirestoreService.swift in Sources */,
 				484693632ECC0DDC00A63998 /* SignUpView.swift in Sources */,
 				4846938A2ECC115E00A63998 /* Config.swift in Sources */,
 				0777BCBE2ECD67AC008C1FDA /* AuthService.swift in Sources */,
