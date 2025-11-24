@@ -17,7 +17,6 @@
 		0777BCD12ECE85F0008C1FDA /* MoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD02ECE85EE008C1FDA /* MoodRepository.swift */; };
 		0777BCD42ECE8B28008C1FDA /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */; };
 		0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD92ECEA2F7008C1FDA /* LoginRootView.swift */; };
-		0777BCE82ECFF4EC008C1FDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */; };
 		0777BCEF2ED2F7E9008C1FDA /* ChatServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */; };
 		4811CC402ED40478003A9A3B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC3F2ED40478003A9A3B /* Resources.swift */; };
 		4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */; };
@@ -36,6 +35,7 @@
 		4811CC7D2ED42423003A9A3B /* ProgressSpinnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC7B2ED42423003A9A3B /* ProgressSpinnerViewController.swift */; };
 		4811CC7E2ED42423003A9A3B /* ProgressSpinnerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC7A2ED42423003A9A3B /* ProgressSpinnerDelegate.swift */; };
 		4811CC802ED42492003A9A3B /* ProgressIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC7F2ED4247D003A9A3B /* ProgressIndicatorManager.swift */; };
+		4811CC842ED50EF1003A9A3B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4811CC832ED50EF1003A9A3B /* GoogleService-Info.plist */; };
 		4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484693442ECC09B100A63998 /* Assets.xcassets */; };
 		484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 484693492ECC09B100A63998 /* LaunchScreen.storyboard */; };
 		484693522ECC09B100A63998 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4846934B2ECC09B100A63998 /* Main.storyboard */; };
@@ -87,7 +87,6 @@
 		0777BCD02ECE85EE008C1FDA /* MoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRepository.swift; sourceTree = "<group>"; };
 		0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
 		0777BCD92ECEA2F7008C1FDA /* LoginRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootView.swift; sourceTree = "<group>"; };
-		0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServiceMock.swift; sourceTree = "<group>"; };
 		4811CC3F2ED40478003A9A3B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
 		4811CC422ED4054A003A9A3B /* ResourcesMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesMapView.swift; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		4811CC7A2ED42423003A9A3B /* ProgressSpinnerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerDelegate.swift; sourceTree = "<group>"; };
 		4811CC7B2ED42423003A9A3B /* ProgressSpinnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressSpinnerViewController.swift; sourceTree = "<group>"; };
 		4811CC7F2ED4247D003A9A3B /* ProgressIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorManager.swift; sourceTree = "<group>"; };
+		4811CC832ED50EF1003A9A3B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		484693432ECC09B100A63998 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		484693442ECC09B100A63998 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		484693472ECC09B100A63998 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -346,7 +346,7 @@
 				484693492ECC09B100A63998 /* LaunchScreen.storyboard */,
 				4846934B2ECC09B100A63998 /* Main.storyboard */,
 				484693892ECC115E00A63998 /* Config.swift */,
-				0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */,
+				4811CC832ED50EF1003A9A3B /* GoogleService-Info.plist */,
 			);
 			path = Aura;
 			sourceTree = "<group>";
@@ -552,9 +552,9 @@
 			files = (
 				4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */,
 				484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */,
+				4811CC842ED50EF1003A9A3B /* GoogleService-Info.plist in Resources */,
 				4846938D2ECC119300A63998 /* README.md in Resources */,
 				484693522ECC09B100A63998 /* Main.storyboard in Resources */,
-				0777BCE82ECFF4EC008C1FDA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
