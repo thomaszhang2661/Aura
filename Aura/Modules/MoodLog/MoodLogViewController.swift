@@ -62,11 +62,14 @@ final class MoodLogViewController: UIViewController {
     }
     
     @objc private func saveMood() {
+        showActivityIndicator()
         guard let uid = AuthService.shared.currentUserUID else {
+            hideActivityIndicator()
             showAlert(title: "Not Logged In", message: "Please login to save your mood.")
             return
         }
         guard let mood = selectedMood else {
+            hideActivityIndicator()
             showAlert(title: "Pick a mood", message: "Please select a mood before saving.")
             return
         }
@@ -76,10 +79,12 @@ final class MoodLogViewController: UIViewController {
             DispatchQueue.main.async {
                 switch result {
                 case .success:
+                    self?.hideActivityIndicator()
                     self?.moodView.noteTextView.text = ""
                     self?.moodView.updateNotePlaceholderVisibility()
                     self?.loadRecentEntries()
                 case .failure(let error):
+                    self?.hideActivityIndicator()
                     self?.showAlert(title: "Save failed", message: error.localizedDescription)
                 }
             }
