@@ -77,7 +77,7 @@ struct Resource: Codable, Identifiable {
     }
     
     // Create from Firestore document
-    static func from(id: String, data: [String: Any]) -> Resource? {
+    static func from(id: String, data: [String: Any]) ->    Resource? {
         guard let name = data["name"] as? String,
               let type = data["type"] as? String,
               let phone = data["phone"] as? String,

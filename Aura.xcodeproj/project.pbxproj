@@ -16,7 +16,7 @@
 		0777BCCE2ECE85D9008C1FDA /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCCD2ECE85D7008C1FDA /* ChatMessage.swift */; };
 		0777BCD12ECE85F0008C1FDA /* MoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD02ECE85EE008C1FDA /* MoodRepository.swift */; };
 		0777BCD42ECE8B28008C1FDA /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */; };
-		0777BCD72ECE8B42008C1FDA /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD62ECE8B41008C1FDA /* LocationService.swift */; };
+		0777BCEF2ED2F7E9008C1FDA /* ChatServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */; };
 		0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0777BCD92ECEA2F7008C1FDA /* LoginRootView.swift */; };
 		0777BCE82ECFF4EC008C1FDA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */; };
 		4811CC402ED40478003A9A3B /* Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC3F2ED40478003A9A3B /* Resources.swift */; };
@@ -30,7 +30,6 @@
 		4811CC5E2ED407C3003A9A3B /* ResourcesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC572ED407C3003A9A3B /* ResourcesAPI.swift */; };
 		4811CC5F2ED407C3003A9A3B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC562ED407C3003A9A3B /* NetworkManager.swift */; };
 		4811CC602ED407C3003A9A3B /* APIConfigs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC502ED407C3003A9A3B /* APIConfigs.swift */; };
-		4811CC612ED407C3003A9A3B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC512ED407C3003A9A3B /* AuthService.swift */; };
 		4811CC622ED407C3003A9A3B /* FirestoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC532ED407C3003A9A3B /* FirestoreService.swift */; };
 		4811CC642ED40A16003A9A3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4811CC632ED40A16003A9A3B /* SceneDelegate.swift */; };
 		4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 484693442ECC09B100A63998 /* Assets.xcassets */; };
@@ -53,7 +52,6 @@
 		484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693872ECC110900A63998 /* IntegrationContracts.swift */; };
 		4846938A2ECC115E00A63998 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693892ECC115E00A63998 /* Config.swift */; };
 		4846938D2ECC119300A63998 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938C2ECC118E00A63998 /* README.md */; };
-		4846938F2ECC11AB00A63998 /* TEAM_ROLES.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938E2ECC11A700A63998 /* TEAM_ROLES.md */; };
 		4871B79A2ED2C20500A38065 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4871B7992ED2C20500A38065 /* FirebaseStorage */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +83,7 @@
 		0777BCCD2ECE85D7008C1FDA /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		0777BCD02ECE85EE008C1FDA /* MoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRepository.swift; sourceTree = "<group>"; };
 		0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
-		0777BCD62ECE8B41008C1FDA /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatServiceMock.swift; sourceTree = "<group>"; };
 		0777BCD92ECEA2F7008C1FDA /* LoginRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRootView.swift; sourceTree = "<group>"; };
 		0777BCE72ECFF4EC008C1FDA /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4811CC3F2ED40478003A9A3B /* Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resources.swift; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		4811CC462ED405CF003A9A3B /* ResourcesMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesMapViewController.swift; sourceTree = "<group>"; };
 		4811CC482ED405FD003A9A3B /* ResourcesAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesAnnotation.swift; sourceTree = "<group>"; };
 		4811CC502ED407C3003A9A3B /* APIConfigs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfigs.swift; sourceTree = "<group>"; };
-		4811CC512ED407C3003A9A3B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		4811CC522ED407C3003A9A3B /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
 		4811CC532ED407C3003A9A3B /* FirestoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreService.swift; sourceTree = "<group>"; };
 		4811CC542ED407C3003A9A3B /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
@@ -123,7 +120,6 @@
 		484693872ECC110900A63998 /* IntegrationContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationContracts.swift; sourceTree = "<group>"; };
 		484693892ECC115E00A63998 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4846938C2ECC118E00A63998 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		4846938E2ECC11A700A63998 /* TEAM_ROLES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TEAM_ROLES.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -276,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				0777BCD32ECE8B27008C1FDA /* ChatRepository.swift */,
+				0777BCEE2ED2F7E9008C1FDA /* ChatServiceMock.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -283,7 +280,6 @@
 		0777BCD52ECE8B35008C1FDA /* Location */ = {
 			isa = PBXGroup;
 			children = (
-				0777BCD62ECE8B41008C1FDA /* LocationService.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -300,7 +296,6 @@
 			isa = PBXGroup;
 			children = (
 				4811CC502ED407C3003A9A3B /* APIConfigs.swift */,
-				4811CC512ED407C3003A9A3B /* AuthService.swift */,
 				4811CC522ED407C3003A9A3B /* ChatService.swift */,
 				4811CC532ED407C3003A9A3B /* FirestoreService.swift */,
 				4811CC542ED407C3003A9A3B /* LocationService.swift */,
@@ -402,7 +397,6 @@
 		4846938B2ECC117D00A63998 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
-				4846938E2ECC11A700A63998 /* TEAM_ROLES.md */,
 				4846938C2ECC118E00A63998 /* README.md */,
 			);
 			path = Docs;
@@ -533,7 +527,6 @@
 			files = (
 				4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */,
 				484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */,
-				4846938F2ECC11AB00A63998 /* TEAM_ROLES.md in Resources */,
 				4846938D2ECC119300A63998 /* README.md in Resources */,
 				484693522ECC09B100A63998 /* Main.storyboard in Resources */,
 				0777BCE82ECFF4EC008C1FDA /* GoogleService-Info.plist in Resources */,
@@ -575,6 +568,7 @@
 				4811CC492ED40607003A9A3B /* ResourcesAnnotation.swift in Sources */,
 				0777BCC22ECD6883008C1FDA /* FirestoreCollections.swift in Sources */,
 				0777BCD42ECE8B28008C1FDA /* ChatRepository.swift in Sources */,
+				0777BCEF2ED2F7E9008C1FDA /* ChatServiceMock.swift in Sources */,
 				4811CC432ED4054A003A9A3B /* ResourcesMapView.swift in Sources */,
 				4846936B2ECC0E6500A63998 /* MoodLogView.swift in Sources */,
 				0777BCDA2ECEA2F9008C1FDA /* LoginRootView.swift in Sources */,
@@ -589,12 +583,10 @@
 				4811CC5E2ED407C3003A9A3B /* ResourcesAPI.swift in Sources */,
 				4811CC5F2ED407C3003A9A3B /* NetworkManager.swift in Sources */,
 				4811CC602ED407C3003A9A3B /* APIConfigs.swift in Sources */,
-				4811CC612ED407C3003A9A3B /* AuthService.swift in Sources */,
 				4811CC622ED407C3003A9A3B /* FirestoreService.swift in Sources */,
 				484693632ECC0DDC00A63998 /* SignUpView.swift in Sources */,
 				4846938A2ECC115E00A63998 /* Config.swift in Sources */,
 				0777BCBE2ECD67AC008C1FDA /* AuthService.swift in Sources */,
-				0777BCD72ECE8B42008C1FDA /* LocationService.swift in Sources */,
 				484693752ECC0EF500A63998 /* ResourcesView.swift in Sources */,
 				4811CC402ED40478003A9A3B /* Resources.swift in Sources */,
 				484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */,
@@ -746,7 +738,7 @@
 				DEVELOPMENT_TEAM = F2NDW9487H;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -810,7 +802,7 @@
 				DEVELOPMENT_TEAM = F2NDW9487H;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

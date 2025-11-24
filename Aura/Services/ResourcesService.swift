@@ -12,7 +12,7 @@ import Foundation
 import CoreLocation
 
 // MARK: - Placeholder Model
-struct Resource: Codable {
+struct ResourceRecord: Codable {
     var id: String?
     var name: String
     var type: String
@@ -42,25 +42,25 @@ class ResourcesService {
     // MARK: - Placeholder Methods
     // TODO: Implement with Firebase Firestore when configured by Member A
     
-    func fetchAllResources(completion: @escaping (Result<[Resource], Error>) -> Void) {
+    func fetchAllResources(completion: @escaping (Result<[ResourceRecord], Error>) -> Void) {
         DispatchQueue.main.async {
             completion(.success([]))
         }
     }
     
-    func fetchNationalResources(completion: @escaping (Result<[Resource], Error>) -> Void) {
+    func fetchNationalResources(completion: @escaping (Result<[ResourceRecord], Error>) -> Void) {
         DispatchQueue.main.async {
             completion(.success([]))
         }
     }
     
-    func fetchNearbyResources(near location: CLLocation, radiusKm: Double = 10, completion: @escaping (Result<[Resource], Error>) -> Void) {
+    func fetchNearbyResources(near location: CLLocation, radiusKm: Double = 10, completion: @escaping (Result<[ResourceRecord], Error>) -> Void) {
         DispatchQueue.main.async {
             completion(.success([]))
         }
     }
     
-    func addResource(_ resource: Resource, completion: @escaping (Result<String, Error>) -> Void) {
+    func addResource(_ resource: ResourceRecord, completion: @escaping (Result<String, Error>) -> Void) {
         DispatchQueue.main.async {
             completion(.success("placeholder-id"))
         }

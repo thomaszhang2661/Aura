@@ -50,11 +50,8 @@ final class LoginViewController: UIViewController {
                 case .success(let user):
                     print("✅ Login success for uid:", user.uid)
 
-                    NotificationCenter.default.post(
-                        name: .didLogin,
-                        object: nil,
-                        userInfo: ["uid": user.uid]
-                    )
+                    EventBus.shared.emit(.didLogin(uid: user.uid))
+                    self?.goToHome()
 
                 case .failure(let error):
                     print("❌ Login failed:", error)
@@ -79,7 +76,7 @@ final class LoginViewController: UIViewController {
         case .success:
             print("✅ Logout success")
 
-            NotificationCenter.default.post(name: .didLogout, object: nil)
+            EventBus.shared.emit(.didLogout)
 
             // Updated alert title
             showAlert("You have been logged out.", title: "Success")
@@ -101,5 +98,11 @@ final class LoginViewController: UIViewController {
                                       preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
+    }
+
+    private func goToHome() {
+        // Push HomeViewController on the current navigation stack
+        let homeVC = HomeViewController()
+        navigationController?.setViewControllers([homeVC], animated: true)
     }
 }

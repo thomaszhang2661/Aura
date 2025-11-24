@@ -75,22 +75,14 @@ class HomeViewController: UIViewController {
     // MARK: - Navigation Actions
     @objc private func openMoodLog() {
         print("📝 Navigate to Mood Log")
-        // TODO: Member B will provide MoodLogViewController
-        // let moodLogVC = MoodLogViewController()
-        // navigationController?.pushViewController(moodLogVC, animated: true)
-        
-        // Placeholder alert
-        showPlaceholder(title: "Mood Log", message: "This feature is being implemented by Member B")
+        let moodLogVC = MoodLogViewController()
+        navigationController?.pushViewController(moodLogVC, animated: true)
     }
     
     @objc private func openChat() {
         print("💬 Navigate to Chat")
-        // TODO: Member B will provide ChatViewController
-        // let chatVC = ChatViewController()
-        // navigationController?.pushViewController(chatVC, animated: true)
-        
-        // Placeholder alert
-        showPlaceholder(title: "Chat with Aura", message: "This feature is being implemented by Member B")
+        let chatVC = ChatViewController()
+        navigationController?.pushViewController(chatVC, animated: true)
     }
     
     @objc private func openResources() {
@@ -107,16 +99,20 @@ class HomeViewController: UIViewController {
         )
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         alert.addAction(UIAlertAction(title: "Logout", style: .destructive) { _ in
-            EventBus.shared.emit(.didLogout)
+            switch AuthService.shared.signOut() {
+            case .success:
+                EventBus.shared.emit(.didLogout)
+                self.handleLogout()
+            case .failure(let error):
+                self.showPlaceholder(title: "Logout Failed", message: error.localizedDescription)
+            }
         })
         present(alert, animated: true)
     }
     
     private func handleLogout() {
-        // TODO: Member A will handle actual logout logic in AuthService
         print("🚪 Logging out...")
-        // navigationController?.popToRootViewController(animated: true)
-        showPlaceholder(title: "Logout", message: "Auth logout will be handled by Member A")
+        navigationController?.setViewControllers([LoginViewController()], animated: true)
     }
     
     // MARK: - Helper

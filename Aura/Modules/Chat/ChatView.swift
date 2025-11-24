@@ -3,147 +3,108 @@
 //  Aura
 //
 //  Created by Chance Q on 11/17/25.
+//  Member B - Chat UI
 //
 
 import UIKit
 
 final class ChatView: UIView {
-
-    // MARK: - Subviews
-
-    private let scrollView = UIScrollView()
-    private let contentStackView = UIStackView()
-
-    private let bottomBar = UIView()
-    let inputBackgroundView = UIView()
-    let inputPlaceholderLabel = UILabel()
-
-    // MARK: - Init
-
+    
+    let tableView = UITableView(frame: .zero, style: .plain)
+    let inputTextView = UITextView()
+    private let placeholderLabel = UILabel()
+    let sendButton = UIButton(type: .system)
+    private let inputContainer = UIView()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
-
+    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
-
-    // MARK: - Setup
-
+    
     private func setup() {
-        backgroundColor = UIColor.systemBackground
-        setupScrollArea()
-        setupBottomBar()
-        addDemoBubbles()
+        backgroundColor = .systemBackground
+        setupTableView()
+        setupInputBar()
+        layoutUI()
     }
-
-    private func setupScrollArea() {
-        addSubview(scrollView)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
+    
+    private func setupTableView() {
+        tableView.separatorStyle = .none
+        tableView.backgroundColor = .clear
+        tableView.keyboardDismissMode = .interactive
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 72
+    }
+    
+    private func setupInputBar() {
+        inputContainer.backgroundColor = UIColor.secondarySystemBackground
+        inputContainer.layer.cornerRadius = 18
+        inputContainer.layer.borderWidth = 1
+        inputContainer.layer.borderColor = UIColor.systemGray4.cgColor
+        
+        inputTextView.font = UIFont.systemFont(ofSize: 16)
+        inputTextView.isScrollEnabled = false
+        inputTextView.textContainerInset = UIEdgeInsets(top: 10, left: 8, bottom: 10, right: 8)
+        
+        placeholderLabel.text = "Type a message…"
+        placeholderLabel.textColor = .secondaryLabel
+        placeholderLabel.font = UIFont.systemFont(ofSize: 15)
+        placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
+        inputTextView.addSubview(placeholderLabel)
+        
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 16),
-            scrollView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            scrollView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            scrollView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -80)
+            placeholderLabel.topAnchor.constraint(equalTo: inputTextView.topAnchor, constant: 10),
+            placeholderLabel.leadingAnchor.constraint(equalTo: inputTextView.leadingAnchor, constant: 12)
         ])
-
-        scrollView.addSubview(contentStackView)
-        contentStackView.axis = .vertical
-        contentStackView.alignment = .fill
-        contentStackView.spacing = 16
-        contentStackView.translatesAutoresizingMaskIntoConstraints = false
+        
+        sendButton.setTitle("Send", for: .normal)
+        sendButton.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        sendButton.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.2)
+        sendButton.layer.cornerRadius = 14
+        sendButton.layer.borderWidth = 1
+        sendButton.layer.borderColor = UIColor.systemPurple.withAlphaComponent(0.4).cgColor
+        sendButton.setTitleColor(.label, for: .normal)
+    }
+    
+    private func layoutUI() {
+        addSubview(tableView)
+        addSubview(inputContainer)
+        inputContainer.addSubview(inputTextView)
+        inputContainer.addSubview(sendButton)
+        
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        inputContainer.translatesAutoresizingMaskIntoConstraints = false
+        inputTextView.translatesAutoresizingMaskIntoConstraints = false
+        sendButton.translatesAutoresizingMaskIntoConstraints = false
+        
         NSLayoutConstraint.activate([
-            contentStackView.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor),
-            contentStackView.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor),
-            contentStackView.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor),
-            contentStackView.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor),
-            contentStackView.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor)
+            tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            tableView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
+            tableView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
+            
+            inputContainer.topAnchor.constraint(equalTo: tableView.bottomAnchor, constant: 8),
+            inputContainer.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
+            inputContainer.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12),
+            inputContainer.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -8),
+            
+            inputTextView.topAnchor.constraint(equalTo: inputContainer.topAnchor, constant: 8),
+            inputTextView.leadingAnchor.constraint(equalTo: inputContainer.leadingAnchor, constant: 10),
+            inputTextView.bottomAnchor.constraint(equalTo: inputContainer.bottomAnchor, constant: -8),
+            
+            sendButton.leadingAnchor.constraint(equalTo: inputTextView.trailingAnchor, constant: 8),
+            sendButton.trailingAnchor.constraint(equalTo: inputContainer.trailingAnchor, constant: -10),
+            sendButton.centerYAnchor.constraint(equalTo: inputContainer.centerYAnchor),
+            sendButton.widthAnchor.constraint(equalToConstant: 72),
+            sendButton.heightAnchor.constraint(equalToConstant: 40)
         ])
     }
-
-    private func setupBottomBar() {
-        addSubview(bottomBar)
-        bottomBar.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            bottomBar.leadingAnchor.constraint(equalTo: leadingAnchor),
-            bottomBar.trailingAnchor.constraint(equalTo: trailingAnchor),
-            bottomBar.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
-            bottomBar.heightAnchor.constraint(equalToConstant: 64)
-        ])
-
-        bottomBar.backgroundColor = UIColor.systemBackground
-
-        bottomBar.addSubview(inputBackgroundView)
-        inputBackgroundView.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            inputBackgroundView.leadingAnchor.constraint(equalTo: bottomBar.leadingAnchor, constant: 24),
-            inputBackgroundView.trailingAnchor.constraint(equalTo: bottomBar.trailingAnchor, constant: -24),
-            inputBackgroundView.centerYAnchor.constraint(equalTo: bottomBar.centerYAnchor),
-            inputBackgroundView.heightAnchor.constraint(equalToConstant: 44)
-        ])
-
-        inputBackgroundView.layer.cornerRadius = 22
-        inputBackgroundView.layer.masksToBounds = true
-        inputBackgroundView.backgroundColor = UIColor.systemPurple.withAlphaComponent(0.3)
-
-        inputBackgroundView.addSubview(inputPlaceholderLabel)
-        inputPlaceholderLabel.translatesAutoresizingMaskIntoConstraints = false
-        NSLayoutConstraint.activate([
-            inputPlaceholderLabel.leadingAnchor.constraint(equalTo: inputBackgroundView.leadingAnchor, constant: 16),
-            inputPlaceholderLabel.trailingAnchor.constraint(equalTo: inputBackgroundView.trailingAnchor, constant: -16),
-            inputPlaceholderLabel.centerYAnchor.constraint(equalTo: inputBackgroundView.centerYAnchor)
-        ])
-        inputPlaceholderLabel.text = "Type a message…"
-        inputPlaceholderLabel.textColor = UIColor.white.withAlphaComponent(0.8)
-        inputPlaceholderLabel.font = UIFont.systemFont(ofSize: 14)
-        inputPlaceholderLabel.textAlignment = .center
-    }
-
-    private func addDemoBubbles() {
-        addBubble(text: "Hello! How are you today?", isMe: false)
-        addBubble(text: "……", isMe: true)
-        addBubble(text: "……", isMe: true)
-    }
-
-    private func addBubble(text: String, isMe: Bool) {
-        let container = UIView()
-        let label = UILabel()
-        label.text = text
-        label.numberOfLines = 0
-        label.font = UIFont.systemFont(ofSize: 15)
-
-        container.addSubview(label)
-        label.translatesAutoresizingMaskIntoConstraints = false
-
-        let horizontalPadding: CGFloat = 16
-        let verticalPadding: CGFloat = 10
-
-        NSLayoutConstraint.activate([
-            label.topAnchor.constraint(equalTo: container.topAnchor, constant: verticalPadding),
-            label.bottomAnchor.constraint(equalTo: container.bottomAnchor, constant: -verticalPadding),
-            label.leadingAnchor.constraint(equalTo: container.leadingAnchor, constant: horizontalPadding),
-            label.trailingAnchor.constraint(equalTo: container.trailingAnchor, constant: -horizontalPadding)
-        ])
-
-        container.layer.cornerRadius = 18
-        container.layer.masksToBounds = true
-        container.layer.borderWidth = 1.2
-        container.layer.borderColor = UIColor.systemPurple.withAlphaComponent(0.6).cgColor
-        container.backgroundColor = isMe
-            ? UIColor.systemPurple.withAlphaComponent(0.12)
-            : UIColor.systemGray6
-
-        let wrapper = UIStackView(arrangedSubviews: [container])
-        wrapper.axis = .horizontal
-
-        if isMe {
-            wrapper.alignment = .trailing
-        } else {
-            wrapper.alignment = .leading
-        }
-
-        contentStackView.addArrangedSubview(wrapper)
+    
+    func updatePlaceholderVisibility() {
+        placeholderLabel.isHidden = !inputTextView.text.isEmpty
     }
 }

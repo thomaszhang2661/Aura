@@ -54,15 +54,9 @@ final class SignUpViewController: UIViewController {
                     print("✅ Sign up success for uid:", user.uid)
 
                     // Notify others (Member C) that login succeeded
-                    NotificationCenter.default.post(
-                        name: .didLogin,
-                        object: nil,
-                        userInfo: ["uid": user.uid]
-                    )
+                    EventBus.shared.emit(.didLogin(uid: user.uid))
 
-                    // For now: go back to login screen
-                    // Later: Member C will replace this with navigation to Home
-                    self?.navigationController?.popViewController(animated: true)
+                    self?.goToHome()
 
                 case .failure(let error):
                     self?.showAlert("Sign up failed: \(error.localizedDescription)")
@@ -83,5 +77,10 @@ final class SignUpViewController: UIViewController {
                                    preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
+    }
+
+    private func goToHome() {
+        let homeVC = HomeViewController()
+        navigationController?.setViewControllers([homeVC], animated: true)
     }
 }
