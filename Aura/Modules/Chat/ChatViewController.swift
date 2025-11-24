@@ -25,6 +25,8 @@ final class ChatViewController: UIViewController {
         title = "AI Chat"
         view.backgroundColor = UIColor.systemBackground
 
+        setupNavigation()
+
         chatView.tableView.dataSource = self
         chatView.tableView.delegate = self
         chatView.tableView.register(ChatMessageCell.self, forCellReuseIdentifier: "ChatMessageCell")
@@ -105,6 +107,24 @@ final class ChatViewController: UIViewController {
         guard !messages.isEmpty else { return }
         let index = IndexPath(row: messages.count - 1, section: 0)
         chatView.tableView.scrollToRow(at: index, at: .bottom, animated: true)
+    }
+}
+
+// MARK: - Navigation
+private extension ChatViewController {
+    func setupNavigation() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            title: "Resources",
+            style: .plain,
+            target: self,
+            action: #selector(openResourcesTapped)
+        )
+    }
+
+    @objc func openResourcesTapped() {
+        // Emit deep link style event so Home can route
+        EventBus.shared.emit(.openResources)
+        navigationController?.popViewController(animated: true)
     }
 }
 
