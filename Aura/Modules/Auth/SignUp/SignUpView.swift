@@ -45,11 +45,9 @@ final class SignUpView: UIView {
         subtitleLabel.textAlignment = .center
         subtitleLabel.textColor = .darkGray
 
-        makeUnderline(emailField, placeholder: "Email")
-        makeUnderline(passwordField, placeholder: "Password")
-        makeUnderline(confirmField, placeholder: "Confirm your password")
-        passwordField.isSecureTextEntry = true
-        confirmField.isSecureTextEntry = true
+        configureEmailField()
+        configurePasswordField()
+        configureConfirmField()
 
         signUpButton.setTitle("SIGN UP", for: .normal)
         signUpButton.titleLabel?.font = .systemFont(ofSize: 18, weight: .semibold)
@@ -100,5 +98,32 @@ final class SignUpView: UIView {
             bottomLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
             bottomLabel.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -22)
         ])
+    }
+
+    // MARK: - Field Config
+    private func configureEmailField() {
+        makeUnderline(emailField, placeholder: "Email")
+        emailField.keyboardType = .emailAddress
+        emailField.autocapitalizationType = .none
+        emailField.autocorrectionType = .no
+        emailField.textContentType = .emailAddress
+    }
+
+    private func configurePasswordField() {
+        makeUnderline(passwordField, placeholder: "Password")
+        passwordField.isSecureTextEntry = true
+        passwordField.keyboardType = .asciiCapable
+        passwordField.autocapitalizationType = .none
+        passwordField.autocorrectionType = .no
+        passwordField.textContentType = .password
+    }
+
+    private func configureConfirmField() {
+        makeUnderline(confirmField, placeholder: "Confirm your password")
+        confirmField.isSecureTextEntry = true
+        confirmField.keyboardType = .asciiCapable
+        confirmField.autocapitalizationType = .none
+        confirmField.autocorrectionType = .no
+        confirmField.textContentType = .newPassword
     }
 }

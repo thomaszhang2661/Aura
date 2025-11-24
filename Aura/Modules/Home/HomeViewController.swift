@@ -102,7 +102,6 @@ class HomeViewController: UIViewController {
             switch AuthService.shared.signOut() {
             case .success:
                 EventBus.shared.emit(.didLogout)
-                self.handleLogout()
             case .failure(let error):
                 self.showPlaceholder(title: "Logout Failed", message: error.localizedDescription)
             }
