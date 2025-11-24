@@ -114,7 +114,7 @@ final class ChatViewController: UIViewController {
 private extension ChatViewController {
     func setupNavigation() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(
-            title: "Resources",
+            title: "Get Help",
             style: .plain,
             target: self,
             action: #selector(openResourcesTapped)
@@ -124,7 +124,7 @@ private extension ChatViewController {
     @objc func openResourcesTapped() {
         // Emit deep link style event so Home can route
         EventBus.shared.emit(.openResources)
-        navigationController?.popViewController(animated: true)
+//        navigationController?.popViewController(animated: true)
     }
 }
 

@@ -1,8 +1,3 @@
-//
-//  SceneDelegate.swift
-//  Aura
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -19,8 +14,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         let window = UIWindow(windowScene: windowScene)
 
-        // ✅ Start with LoginViewController inside a navigation controller
-        let rootVC = LoginViewController()
+        // ✅ Persist login: if current user exists, go straight to Home
+        let rootVC: UIViewController
+        if AuthService.shared.currentUserUID != nil {
+            rootVC = HomeViewController()
+        } else {
+            rootVC = LoginViewController()
+        }
         let nav = UINavigationController(rootViewController: rootVC)
 
         window.rootViewController = nav
