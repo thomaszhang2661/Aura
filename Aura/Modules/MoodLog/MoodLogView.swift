@@ -13,6 +13,8 @@ final class MoodLogView: UIView {
     // MARK: - UI
     private let titleLabel = UILabel()
     private let moodStack = UIStackView()
+    private let scrollView = UIScrollView()
+    private let contentStack = UIStackView()
     private(set) var moodButtons: [MoodEntry.Mood: UIButton] = [:]
     
     let noteTextView = UITextView()
@@ -53,6 +55,7 @@ final class MoodLogView: UIView {
         moodStack.axis = .horizontal
         moodStack.spacing = 12
         moodStack.distribution = .fillEqually
+        moodStack.translatesAutoresizingMaskIntoConstraints = false
         
         MoodEntry.Mood.allCases.forEach { mood in
             let button = UIButton(type: .system)
@@ -64,7 +67,6 @@ final class MoodLogView: UIView {
             button.layer.borderWidth = 1.5
             button.layer.borderColor = UIColor.systemGray4.cgColor
             button.backgroundColor = UIColor.secondarySystemBackground
-            button.contentEdgeInsets = UIEdgeInsets(top: 10, left: 6, bottom: 10, right: 6)
             moodButtons[mood] = button
             moodStack.addArrangedSubview(button)
         }
@@ -109,28 +111,50 @@ final class MoodLogView: UIView {
     }
     
     private func setupLayout() {
-        let stack = UIStackView(arrangedSubviews: [titleLabel, moodStack, noteTextView, saveButton, historyTableView])
-        stack.axis = .vertical
-        stack.spacing = 16
-        stack.setCustomSpacing(10, after: titleLabel)
-        stack.setCustomSpacing(18, after: moodStack)
-        stack.setCustomSpacing(22, after: noteTextView)
-        
-        addSubview(stack)
-        stack.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(scrollView)
+        scrollView.addSubview(contentStack)
+
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        scrollView.alwaysBounceVertical = true
+        scrollView.contentInsetAdjustmentBehavior = .automatic
+        contentStack.translatesAutoresizingMaskIntoConstraints = false
         noteTextView.translatesAutoresizingMaskIntoConstraints = false
         historyTableView.translatesAutoresizingMaskIntoConstraints = false
-        
+
+        contentStack.axis = .vertical
+        contentStack.spacing = 16
+        contentStack.setCustomSpacing(10, after: titleLabel)
+        contentStack.setCustomSpacing(18, after: moodStack)
+        contentStack.setCustomSpacing(22, after: noteTextView)
+
+        contentStack.addArrangedSubview(titleLabel)
+        contentStack.addArrangedSubview(moodStack)
+        contentStack.addArrangedSubview(noteTextView)
+        contentStack.addArrangedSubview(saveButton)
+        contentStack.addArrangedSubview(historyTableView)
+
         NSLayoutConstraint.activate([
-            stack.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 16),
-            stack.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-            stack.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-            stack.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12),
-            
-            moodStack.heightAnchor.constraint(equalToConstant: 110),
-            noteTextView.heightAnchor.constraint(equalToConstant: 140),
-            historyTableView.heightAnchor.constraint(greaterThanOrEqualToConstant: 220)
+            scrollView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            scrollView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
+            scrollView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+
+            contentStack.topAnchor.constraint(equalTo: scrollView.contentLayoutGuide.topAnchor, constant: 16),
+            contentStack.leadingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.leadingAnchor, constant: 16),
+            contentStack.trailingAnchor.constraint(equalTo: scrollView.contentLayoutGuide.trailingAnchor, constant: -16),
+            contentStack.bottomAnchor.constraint(equalTo: scrollView.contentLayoutGuide.bottomAnchor, constant: -12),
+            contentStack.widthAnchor.constraint(equalTo: scrollView.frameLayoutGuide.widthAnchor, constant: -32),
+
+            moodStack.heightAnchor.constraint(equalToConstant: 110)
         ])
+
+        let noteHeight = noteTextView.heightAnchor.constraint(greaterThanOrEqualToConstant: 120)
+        noteHeight.priority = .defaultHigh
+        noteHeight.isActive = true
+
+        let historyHeight = historyTableView.heightAnchor.constraint(greaterThanOrEqualToConstant: 220)
+        historyHeight.priority = .defaultHigh
+        historyHeight.isActive = true
     }
     
     // MARK: - Helpers
