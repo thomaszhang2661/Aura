@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 final class MoodLogViewController: UIViewController {
     
@@ -39,6 +40,7 @@ final class MoodLogViewController: UIViewController {
         
         setupMoodButtons()
         moodView.saveButton.addTarget(self, action: #selector(saveMood), for: .touchUpInside)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Community", style: .plain, target: self, action: #selector(openCommunity))
         
         selectedMood = .happy
         loadRecentEntries()
@@ -122,6 +124,12 @@ final class MoodLogViewController: UIViewController {
             self.resetInputUI()
             self.appendAndRefresh(newEntry)
             self.isSaving = false
+            let authorName = Auth.auth().currentUser?.email
+            PublicMoodRepository.shared.publishCurrentMood(from: newEntry, authorName: authorName) { result in
+                if case .failure(let error) = result {
+                    print("Failed to publish public mood: \(error.localizedDescription)")
+                }
+            }
         }
     }
     
@@ -148,6 +156,11 @@ final class MoodLogViewController: UIViewController {
                 self.moodView.historyTableView.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
             }
         }
+    }
+
+    @objc private func openCommunity() {
+        let communityVC = CommunityViewController()
+        navigationController?.pushViewController(communityVC, animated: true)
     }
 }
 

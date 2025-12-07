@@ -56,6 +56,10 @@
 		4846938A2ECC115E00A63998 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484693892ECC115E00A63998 /* Config.swift */; };
 		4846938D2ECC119300A63998 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4846938C2ECC118E00A63998 /* README.md */; };
 		4871B79A2ED2C20500A38065 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4871B7992ED2C20500A38065 /* FirebaseStorage */; };
+		48B7C2B82EE616770019E3C0 /* PublicMoodEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7C2B62EE616770019E3C0 /* PublicMoodEntry.swift */; };
+		48B7C2B92EE616770019E3C0 /* PublicMoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7C2B72EE616770019E3C0 /* PublicMoodRepository.swift */; };
+		48B7C2BD2EE616C90019E3C0 /* CommunityMoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7C2BA2EE616C90019E3C0 /* CommunityMoodCell.swift */; };
+		48B7C2BE2EE616C90019E3C0 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7C2BB2EE616C90019E3C0 /* CommunityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +130,10 @@
 		484693872ECC110900A63998 /* IntegrationContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntegrationContracts.swift; sourceTree = "<group>"; };
 		484693892ECC115E00A63998 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		4846938C2ECC118E00A63998 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		48B7C2B62EE616770019E3C0 /* PublicMoodEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMoodEntry.swift; sourceTree = "<group>"; };
+		48B7C2B72EE616770019E3C0 /* PublicMoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMoodRepository.swift; sourceTree = "<group>"; };
+		48B7C2BA2EE616C90019E3C0 /* CommunityMoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMoodCell.swift; sourceTree = "<group>"; };
+		48B7C2BB2EE616C90019E3C0 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -206,6 +214,7 @@
 				484693672ECC0E3100A63998 /* MoodLog */,
 				484693702ECC0EAA00A63998 /* Chat */,
 				484693712ECC0EBD00A63998 /* Resources */,
+				48B7C2BC2EE616C90019E3C0 /* Community */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -270,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				0777BCD02ECE85EE008C1FDA /* MoodRepository.swift */,
+				48B7C2B62EE616770019E3C0 /* PublicMoodEntry.swift */,
+				48B7C2B72EE616770019E3C0 /* PublicMoodRepository.swift */,
 			);
 			path = Mood;
 			sourceTree = "<group>";
@@ -425,6 +436,15 @@
 				4846938C2ECC118E00A63998 /* README.md */,
 			);
 			path = Docs;
+			sourceTree = "<group>";
+		};
+		48B7C2BC2EE616C90019E3C0 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+				48B7C2BA2EE616C90019E3C0 /* CommunityMoodCell.swift */,
+				48B7C2BB2EE616C90019E3C0 /* CommunityViewController.swift */,
+			);
+			path = Community;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -608,6 +628,8 @@
 				4811CC5E2ED407C3003A9A3B /* ResourcesAPI.swift in Sources */,
 				4811CC802ED42492003A9A3B /* ProgressIndicatorManager.swift in Sources */,
 				4811CC5F2ED407C3003A9A3B /* NetworkManager.swift in Sources */,
+				48B7C2B82EE616770019E3C0 /* PublicMoodEntry.swift in Sources */,
+				48B7C2B92EE616770019E3C0 /* PublicMoodRepository.swift in Sources */,
 				4811CC602ED407C3003A9A3B /* APIConfigs.swift in Sources */,
 				4811CC622ED407C3003A9A3B /* FirestoreService.swift in Sources */,
 				484693632ECC0DDC00A63998 /* SignUpView.swift in Sources */,
@@ -619,6 +641,8 @@
 				4811CC402ED40478003A9A3B /* Resources.swift in Sources */,
 				484693882ECC110900A63998 /* IntegrationContracts.swift in Sources */,
 				4846936F2ECC0EA200A63998 /* ChatViewController.swift in Sources */,
+				48B7C2BD2EE616C90019E3C0 /* CommunityMoodCell.swift in Sources */,
+				48B7C2BE2EE616C90019E3C0 /* CommunityViewController.swift in Sources */,
 				484693572ECC09B100A63998 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
