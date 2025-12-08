@@ -125,6 +125,9 @@ final class PublicMoodRepository {
             return nil
         } completion: { _, error in
             DispatchQueue.main.async {
+                if let error = error as NSError? {
+                    print("⚠️ Like toggle failed code:\(error.code) domain:\(error.domain) info:\(error.userInfo)")
+                }
                 completion?(error)
             }
         }

@@ -45,7 +45,9 @@ final class CommunityViewController: UIViewController {
     }
 
     private func loadFeed() {
-        refreshControl.beginRefreshing()
+        if tableView.window != nil, !refreshControl.isRefreshing {
+            refreshControl.beginRefreshing()
+        }
         PublicMoodRepository.shared.fetchRecent { [weak self] result in
             guard let self else { return }
             self.refreshControl.endRefreshing()
