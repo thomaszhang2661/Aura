@@ -212,6 +212,7 @@
 				026A92D12ECBFCC90017D43B /* AuraTests */,
 				026A92DB2ECBFCC90017D43B /* AuraUITests */,
 				026A92B92ECBFCC40017D43B /* Products */,
+				4846938C2ECC118E00A63998 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -461,7 +462,6 @@
 		4846938B2ECC117D00A63998 /* Docs */ = {
 			isa = PBXGroup;
 			children = (
-				4846938C2ECC118E00A63998 /* README.md */,
 				48B7C2CD2EE7D7760019E3C0 /* Screenshots */,
 			);
 			path = Docs;
