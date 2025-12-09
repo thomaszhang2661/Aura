@@ -87,38 +87,38 @@ service cloud.firestore {
 
 ### Auth (Sign Up / Log In)
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Screenshots/Signup.png" alt="Sign Up" width="30%">
-  <img src="Docs/Screenshots/Picture.png" alt="Log In" width="30%">
+  <img src="Aura/Docs/Screenshots/Signup.png" alt="Sign Up" width="30%">
+  <img src="Aura/Docs/Screenshots/Picture.png" alt="Log In" width="30%">
 </div>
 
 ### Home hub
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Screenshots/Home.png" alt="Home" width="30%">
-  <img src="Docs/Screenshots/Logout.png" alt="Log Out" width="30%">
+  <img src="Aura/Docs/Screenshots/Home.png" alt="Home" width="30%">
+  <img src="Aura/Docs/Screenshots/Logout.png" alt="Log Out" width="30%">
 </div>
 
 ### Mood Log (private + publish to community)
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Screenshots/Moodlog.png" alt="Mood Log" width="30%">
+  <img src="Aura/Docs/Screenshots/Moodlog.png" alt="Mood Log" width="30%">
 </div>
 
 ### Community feed with likes
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Screenshots/Community.png" alt="Community" width="30%">
+  <img src="Aura/Docs/Screenshots/Community.png" alt="Community" width="30%">
 </div>
 
 ### AI Chat
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Screenshots/AI%20Chat.png" alt="AI Chat" width="30%">
+  <img src="Aura/Docs/Screenshots/AI%20Chat.png" alt="AI Chat" width="30%">
 </div>
 
 ### Resources (list / nearby / map / navigation)
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Screenshots/Resouces.png" alt="Resources List" width="30%">
-  <img src="Docs/Screenshots/Resources(find%20nearby%20support).png" alt="Resources Nearby" width="30%">
-  <img src="Docs/Screenshots/Resouces(show%20on%20map).png" alt="Resources Map" width="30%">
-  <img src="Docs/Screenshots/Resources(make%20phone%20call).png" alt="Resources Call" width="30%">
-  <img src="Docs/Screenshots/map(annotation).png" alt="Map Annotation" width="30%">
-  <img src="Docs/Screenshots/map(annotation%20tapped).png" alt="Map Callout" width="30%">
-  <img src="Docs/Screenshots/Map(navvigate%20to%20apple%20map).png" alt="Navigate to Apple Maps" width="30%">
+  <img src="Aura/Docs/Screenshots/Resouces.png" alt="Resources List" width="30%">
+  <img src="Aura/Docs/Screenshots/Resources(find%20nearby%20support).png" alt="Resources Nearby" width="30%">
+  <img src="Aura/Docs/Screenshots/Resouces(show%20on%20map).png" alt="Resources Map" width="30%">
+  <img src="Aura/Docs/Screenshots/Resources(make%20phone%20call).png" alt="Resources Call" width="30%">
+  <img src="Aura/Docs/Screenshots/map(annotation).png" alt="Map Annotation" width="30%">
+  <img src="Aura/Docs/Screenshots/map(annotation%20tapped).png" alt="Map Callout" width="30%">
+  <img src="Aura/Docs/Screenshots/Map(navvigate%20to%20apple%20map).png" alt="Navigate to Apple Maps" width="30%">
 </div>
