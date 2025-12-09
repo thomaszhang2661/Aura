@@ -271,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				0777BCC12ECD6882008C1FDA /* FirestoreCollections.swift */,
+				4811CC502ED407C3003A9A3B /* APIConfigs.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -312,7 +313,6 @@
 		4811CC592ED407C3003A9A3B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4811CC502ED407C3003A9A3B /* APIConfigs.swift */,
 				4811CC522ED407C3003A9A3B /* ChatService.swift */,
 				4811CC532ED407C3003A9A3B /* FirestoreService.swift */,
 				4811CC542ED407C3003A9A3B /* LocationService.swift */,
