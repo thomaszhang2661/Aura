@@ -85,34 +85,34 @@ service cloud.firestore {
 
 ## Screenshots
 
-**Auth (Sign Up / Log In)**
+### Auth (Sign Up / Log In)
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
   <img src="Screenshots/Signup.png" alt="Sign Up" width="30%">
   <img src="Screenshots/Picture.png" alt="Log In" width="30%">
 </div>
 
-**Home hub**
+### Home hub
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
   <img src="Screenshots/Home.png" alt="Home" width="30%">
   <img src="Screenshots/Logout.png" alt="Log Out" width="30%">
 </div>
 
-**Mood Log (private + publish to community)**
+### Mood Log (private + publish to community)
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
   <img src="Screenshots/Moodlog.png" alt="Mood Log" width="30%">
 </div>
 
-**Community feed with likes**
+### Community feed with likes
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
   <img src="Screenshots/Community.png" alt="Community" width="30%">
 </div>
 
-**AI Chat**
+### AI Chat
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
   <img src="Screenshots/AI%20Chat.png" alt="AI Chat" width="30%">
 </div>
 
-**Resources (list / nearby / map / navigation)**
+### Resources (list / nearby / map / navigation)
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
   <img src="Screenshots/Resouces.png" alt="Resources List" width="30%">
   <img src="Screenshots/Resources(find%20nearby%20support).png" alt="Resources Nearby" width="30%">
