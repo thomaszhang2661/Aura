@@ -87,38 +87,38 @@ service cloud.firestore {
 
 **Auth (Sign Up / Log In)**
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Screenshots/Signup.png" alt="Sign Up" width="30%">
-  <img src="Docs/Screenshots/Picture.png" alt="Log In" width="30%">
+  <img src="Screenshots/Signup.png" alt="Sign Up" width="30%">
+  <img src="Screenshots/Picture.png" alt="Log In" width="30%">
 </div>
 
 **Home hub**
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Screenshots/Home.png" alt="Home" width="30%">
-  <img src="Docs/Screenshots/Logout.png" alt="Log Out" width="30%">
+  <img src="Screenshots/Home.png" alt="Home" width="30%">
+  <img src="Screenshots/Logout.png" alt="Log Out" width="30%">
 </div>
 
 **Mood Log (private + publish to community)**
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Moodlog.png" alt="Mood Log" width="30%">
+  <img src="Screenshots/Moodlog.png" alt="Mood Log" width="30%">
 </div>
 
 **Community feed with likes**
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Community.png" alt="Community" width="30%">
+  <img src="Screenshots/Community.png" alt="Community" width="30%">
 </div>
 
 **AI Chat**
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/AI Chat.png" alt="AI Chat" width="30%">
+  <img src="Screenshots/AI%20Chat.png" alt="AI Chat" width="30%">
 </div>
 
 **Resources (list / nearby / map / navigation)**
 <div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <img src="Docs/Resources.png" alt="Resources" width="30%">
-  <img src="Docs/Resources(find nearby support).png" alt="Resources Nearby" width="30%">
-  <img src="Docs/Resouces(show on map).png" alt="Resources Map" width="30%">
-  <img src="Docs/Resources(make phone call).png" alt="Resources Directions" width="30%">
-  <img src="Docs/map(annotation).png" alt="Resource Annotation" width="30%">
-    <img src="Docs/map(annotation tapped).png" alt="Callout Window" width="30%">
-    <img src="Docs/Map(navvigate to apple map).png" alt="Place on Apple Maps" width="30%">
+  <img src="Screenshots/Resouces.png" alt="Resources List" width="30%">
+  <img src="Screenshots/Resources(find%20nearby%20support).png" alt="Resources Nearby" width="30%">
+  <img src="Screenshots/Resouces(show%20on%20map).png" alt="Resources Map" width="30%">
+  <img src="Screenshots/Resources(make%20phone%20call).png" alt="Resources Call" width="30%">
+  <img src="Screenshots/map(annotation).png" alt="Map Annotation" width="30%">
+  <img src="Screenshots/map(annotation%20tapped).png" alt="Map Callout" width="30%">
+  <img src="Screenshots/Map(navvigate%20to%20apple%20map).png" alt="Navigate to Apple Maps" width="30%">
 </div>
