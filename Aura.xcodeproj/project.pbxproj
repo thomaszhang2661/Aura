@@ -60,6 +60,20 @@
 		48B7C2B92EE616770019E3C0 /* PublicMoodRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7C2B72EE616770019E3C0 /* PublicMoodRepository.swift */; };
 		48B7C2BD2EE616C90019E3C0 /* CommunityMoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7C2BA2EE616C90019E3C0 /* CommunityMoodCell.swift */; };
 		48B7C2BE2EE616C90019E3C0 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B7C2BB2EE616C90019E3C0 /* CommunityViewController.swift */; };
+		48B7C2CE2EE7D7760019E3C0 /* AI Chat.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2BF2EE7D7760019E3C0 /* AI Chat.png */; };
+		48B7C2CF2EE7D7760019E3C0 /* Resources(find nearby support).png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2CA2EE7D7760019E3C0 /* Resources(find nearby support).png */; };
+		48B7C2D02EE7D7760019E3C0 /* Moodlog.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C62EE7D7760019E3C0 /* Moodlog.png */; };
+		48B7C2D12EE7D7760019E3C0 /* Resouces(show on map).png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C92EE7D7760019E3C0 /* Resouces(show on map).png */; };
+		48B7C2D22EE7D7760019E3C0 /* Picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C72EE7D7760019E3C0 /* Picture.png */; };
+		48B7C2D32EE7D7760019E3C0 /* Resouces.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C82EE7D7760019E3C0 /* Resouces.png */; };
+		48B7C2D42EE7D7760019E3C0 /* Logout.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C22EE7D7760019E3C0 /* Logout.png */; };
+		48B7C2D52EE7D7760019E3C0 /* Signup.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2CC2EE7D7760019E3C0 /* Signup.png */; };
+		48B7C2D62EE7D7760019E3C0 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C12EE7D7760019E3C0 /* Home.png */; };
+		48B7C2D72EE7D7760019E3C0 /* Map(navvigate to apple map).png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C52EE7D7760019E3C0 /* Map(navvigate to apple map).png */; };
+		48B7C2D82EE7D7760019E3C0 /* Community.png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C02EE7D7760019E3C0 /* Community.png */; };
+		48B7C2D92EE7D7760019E3C0 /* map(annotation tapped).png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C32EE7D7760019E3C0 /* map(annotation tapped).png */; };
+		48B7C2DA2EE7D7760019E3C0 /* map(annotation).png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2C42EE7D7760019E3C0 /* map(annotation).png */; };
+		48B7C2DB2EE7D7760019E3C0 /* Resources(make phone call).png in Resources */ = {isa = PBXBuildFile; fileRef = 48B7C2CB2EE7D7760019E3C0 /* Resources(make phone call).png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -134,6 +148,20 @@
 		48B7C2B72EE616770019E3C0 /* PublicMoodRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicMoodRepository.swift; sourceTree = "<group>"; };
 		48B7C2BA2EE616C90019E3C0 /* CommunityMoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMoodCell.swift; sourceTree = "<group>"; };
 		48B7C2BB2EE616C90019E3C0 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
+		48B7C2BF2EE7D7760019E3C0 /* AI Chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AI Chat.png"; sourceTree = "<group>"; };
+		48B7C2C02EE7D7760019E3C0 /* Community.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Community.png; sourceTree = "<group>"; };
+		48B7C2C12EE7D7760019E3C0 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		48B7C2C22EE7D7760019E3C0 /* Logout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logout.png; sourceTree = "<group>"; };
+		48B7C2C32EE7D7760019E3C0 /* map(annotation tapped).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map(annotation tapped).png"; sourceTree = "<group>"; };
+		48B7C2C42EE7D7760019E3C0 /* map(annotation).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map(annotation).png"; sourceTree = "<group>"; };
+		48B7C2C52EE7D7760019E3C0 /* Map(navvigate to apple map).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map(navvigate to apple map).png"; sourceTree = "<group>"; };
+		48B7C2C62EE7D7760019E3C0 /* Moodlog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moodlog.png; sourceTree = "<group>"; };
+		48B7C2C72EE7D7760019E3C0 /* Picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Picture.png; sourceTree = "<group>"; };
+		48B7C2C82EE7D7760019E3C0 /* Resouces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Resouces.png; sourceTree = "<group>"; };
+		48B7C2C92EE7D7760019E3C0 /* Resouces(show on map).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resouces(show on map).png"; sourceTree = "<group>"; };
+		48B7C2CA2EE7D7760019E3C0 /* Resources(find nearby support).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resources(find nearby support).png"; sourceTree = "<group>"; };
+		48B7C2CB2EE7D7760019E3C0 /* Resources(make phone call).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Resources(make phone call).png"; sourceTree = "<group>"; };
+		48B7C2CC2EE7D7760019E3C0 /* Signup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Signup.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -271,6 +299,7 @@
 			isa = PBXGroup;
 			children = (
 				0777BCC12ECD6882008C1FDA /* FirestoreCollections.swift */,
+				4811CC502ED407C3003A9A3B /* APIConfigs.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -312,7 +341,6 @@
 		4811CC592ED407C3003A9A3B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4811CC502ED407C3003A9A3B /* APIConfigs.swift */,
 				4811CC522ED407C3003A9A3B /* ChatService.swift */,
 				4811CC532ED407C3003A9A3B /* FirestoreService.swift */,
 				4811CC542ED407C3003A9A3B /* LocationService.swift */,
@@ -434,6 +462,7 @@
 			isa = PBXGroup;
 			children = (
 				4846938C2ECC118E00A63998 /* README.md */,
+				48B7C2CD2EE7D7760019E3C0 /* Screenshots */,
 			);
 			path = Docs;
 			sourceTree = "<group>";
@@ -445,6 +474,27 @@
 				48B7C2BB2EE616C90019E3C0 /* CommunityViewController.swift */,
 			);
 			path = Community;
+			sourceTree = "<group>";
+		};
+		48B7C2CD2EE7D7760019E3C0 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				48B7C2BF2EE7D7760019E3C0 /* AI Chat.png */,
+				48B7C2C02EE7D7760019E3C0 /* Community.png */,
+				48B7C2C12EE7D7760019E3C0 /* Home.png */,
+				48B7C2C22EE7D7760019E3C0 /* Logout.png */,
+				48B7C2C32EE7D7760019E3C0 /* map(annotation tapped).png */,
+				48B7C2C42EE7D7760019E3C0 /* map(annotation).png */,
+				48B7C2C52EE7D7760019E3C0 /* Map(navvigate to apple map).png */,
+				48B7C2C62EE7D7760019E3C0 /* Moodlog.png */,
+				48B7C2C72EE7D7760019E3C0 /* Picture.png */,
+				48B7C2C82EE7D7760019E3C0 /* Resouces.png */,
+				48B7C2C92EE7D7760019E3C0 /* Resouces(show on map).png */,
+				48B7C2CA2EE7D7760019E3C0 /* Resources(find nearby support).png */,
+				48B7C2CB2EE7D7760019E3C0 /* Resources(make phone call).png */,
+				48B7C2CC2EE7D7760019E3C0 /* Signup.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,6 +623,20 @@
 				4846934F2ECC09B100A63998 /* Assets.xcassets in Resources */,
 				484693512ECC09B100A63998 /* LaunchScreen.storyboard in Resources */,
 				4811CC842ED50EF1003A9A3B /* GoogleService-Info.plist in Resources */,
+				48B7C2CE2EE7D7760019E3C0 /* AI Chat.png in Resources */,
+				48B7C2CF2EE7D7760019E3C0 /* Resources(find nearby support).png in Resources */,
+				48B7C2D02EE7D7760019E3C0 /* Moodlog.png in Resources */,
+				48B7C2D12EE7D7760019E3C0 /* Resouces(show on map).png in Resources */,
+				48B7C2D22EE7D7760019E3C0 /* Picture.png in Resources */,
+				48B7C2D32EE7D7760019E3C0 /* Resouces.png in Resources */,
+				48B7C2D42EE7D7760019E3C0 /* Logout.png in Resources */,
+				48B7C2D52EE7D7760019E3C0 /* Signup.png in Resources */,
+				48B7C2D62EE7D7760019E3C0 /* Home.png in Resources */,
+				48B7C2D72EE7D7760019E3C0 /* Map(navvigate to apple map).png in Resources */,
+				48B7C2D82EE7D7760019E3C0 /* Community.png in Resources */,
+				48B7C2D92EE7D7760019E3C0 /* map(annotation tapped).png in Resources */,
+				48B7C2DA2EE7D7760019E3C0 /* map(annotation).png in Resources */,
+				48B7C2DB2EE7D7760019E3C0 /* Resources(make phone call).png in Resources */,
 				4846938D2ECC119300A63998 /* README.md in Resources */,
 				484693522ECC09B100A63998 /* Main.storyboard in Resources */,
 			);
