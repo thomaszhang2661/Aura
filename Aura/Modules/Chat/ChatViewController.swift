@@ -63,18 +63,23 @@ final class ChatViewController: UIViewController {
     // MARK: - Data
     private func loadHistory() {
         guard let uid = AuthService.shared.currentUserUID else {
-            seedGreeting()
+            seedGreeting(persist: false)
             return
         }
         repository.fetchRecent(uid: uid) { [weak self] result in
             DispatchQueue.main.async {
+                guard let self else { return }
                 switch result {
                 case .success(let history):
-                    self?.messages = history.isEmpty ? [self?.defaultGreeting()].compactMap { $0 } : history
-                    self?.chatView.tableView.reloadData()
-                    self?.scrollToBottom()
+                    if history.isEmpty {
+                        self.seedGreeting(persist: true)
+                    } else {
+                        self.messages = history
+                        self.chatView.tableView.reloadData()
+                        self.scrollToBottom()
+                    }
                 case .failure:
-                    self?.seedGreeting()
+                    self.seedGreeting(persist: false)
                 }
             }
         }
@@ -93,10 +98,18 @@ final class ChatViewController: UIViewController {
         }
     }
     
-    private func seedGreeting() {
-        messages = [defaultGreeting()]
+    private func seedGreeting(persist: Bool) {
+        let greeting = defaultGreeting()
+        messages = [greeting]
         chatView.tableView.reloadData()
         scrollToBottom()
+        if persist, let uid = AuthService.shared.currentUserUID {
+            repository.addMessage(uid: uid, message: greeting) { result in
+                if case let .failure(error) = result {
+                    print("⚠️ Failed to persist greeting: \(error.localizedDescription)")
+                }
+            }
+        }
     }
     
     private func defaultGreeting() -> ChatMessage {

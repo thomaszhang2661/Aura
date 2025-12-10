@@ -81,14 +81,22 @@ class HomeViewController: UIViewController {
     
     @objc private func openChat() {
         print("💬 Navigate to Chat")
-        let chatVC = ChatViewController()
-        navigationController?.pushViewController(chatVC, animated: true)
+        guard let nav = navigationController else { return }
+        if let existing = nav.viewControllers.first(where: { $0 is ChatViewController }) {
+            nav.popToViewController(existing, animated: true)
+        } else {
+            nav.pushViewController(ChatViewController(), animated: true)
+        }
     }
     
     @objc private func openResources() {
         print("🏥 Navigate to Resources")
-        let resourcesVC = ResourcesViewController()
-        navigationController?.pushViewController(resourcesVC, animated: true)
+        guard let nav = navigationController else { return }
+        if let existing = nav.viewControllers.first(where: { $0 is ResourcesViewController }) {
+            nav.popToViewController(existing, animated: true)
+        } else {
+            nav.pushViewController(ResourcesViewController(), animated: true)
+        }
     }
     
     @objc private func logoutTapped() {

@@ -65,6 +65,7 @@ final class SignUpViewController: UIViewController {
                     self?.goToHome()
 
                 case .failure(let error):
+                    self?.hideActivityIndicator()
                     self?.showAlert("Sign up failed: \(error.localizedDescription)")
                 }
             }

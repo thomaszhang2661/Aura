@@ -138,7 +138,6 @@ class ResourcesViewController: UIViewController {
     @objc private func chatWithAuraTapped() {
         // Emit event to open chat
         EventBus.shared.emit(.openChat)
-        navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Location Handling (using API like tutorial's details endpoint)
